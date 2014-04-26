@@ -15,12 +15,14 @@
       .site-content
         .content-area
           .site-main
+            #top_holder
             .section
-              %h2 Summary
+              %h2.followMeBar Summary
               .article
+                %p
                 = markdown(data.resume.info.desc)
             .section
-              %h2 Experience
+              %h2.followMeBar Experience
               - data.resume.work.each do |work|
                 .work.article
                   %h3.work-title=    work.title
@@ -29,7 +31,7 @@
                   %p.work-location.location=  work.location
                   .work-desc.desc=    markdown(work.description)
             .section
-              %h2 Speaking Engagements
+              %h2.followMeBar Speaking Engagements
               - data.resume.event.each do |event|
                 .work.article
                   %h3.event-name=    event.name
@@ -38,7 +40,7 @@
                   .event-desc.desc=    markdown(event.description)
 
             .section
-              %h2 Education
+              %h2.followMeBar Education
               - data.resume.education.each do |school|
                 .work.article
                   %h3.event-name=    school.name
@@ -50,10 +52,8 @@
               - data.resume.contact.each do |contact|
                 %li
                   = markdown_unwrap_p(contact.link)
-
-    / = partial "layouts/footer"
     - if content_for?(:footer)
       = yield_content :footer
-    / = partial "layouts/jquery"
+    = partial "layouts/jquery"
     - if content_for?(:script)
       = yield_content :script
