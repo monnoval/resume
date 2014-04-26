@@ -9,7 +9,7 @@
 }
 
 .site-content h3 {
-	margin: 0;
+	margin-bottom: 0;
 	font-size: ceil($font-size-base * 1.25); // ~18px
 	font-weight: bold;
 }
@@ -28,23 +28,23 @@
 
 }
 
-.work-dates {
+.date {
 	border-right:  2px solid $gray-lighter;
 	margin-right:  10px;
 	padding-right: 10px;
 }
 
-.work-location {
+.location {
 	text-transform: lowercase;
 }
 
-.work-dates,
-.work-location {
+.date,
+.location {
 	color: $gray-light;
 	float: left;
 }
 
-.work-desc {
+.desc {
 	clear: both;
 }
 

@@ -25,10 +25,24 @@
                 .work.article
                   %h3.work-title=    work.title
                   %h4.work-employer= work.employer
-                  %p.work-dates=     work.dates
-                  %p.work-location=  work.location
-                  .work-desc=    markdown(work.description)
+                  %p.work-dates.date=     work.dates
+                  %p.work-location.location=  work.location
+                  .work-desc.desc=    markdown(work.description)
+            .section
+              %h2 Speaking Engagements
+              - data.resume.event.each do |event|
+                .work.article
+                  %h3.event-name=    event.name
+                  %p.event-date.date=     event.date
+                  %p.event-location.location= event.location
+                  .event-desc.desc=    markdown(event.description)
 
+            .section
+              %h2 Education
+              - data.resume.education.each do |school|
+                .work.article
+                  %h3.event-name=    school.name
+                  .event-desc.desc=  markdown(school.description)
         .widget-area
           .widget.widget_text
             .section

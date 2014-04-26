@@ -108,3 +108,81 @@ work:
         - Experience with continuos integration for software maintainability
         - Experience on step by step software development cycle from requirements, design, development and deployment.
         - Experience with graphic design.
+
+    - employer: Afterfive Technologies
+      title: Web Designer and Theme Developer
+      location: 'Davao City, Philippines'
+      dates: February 2010 – October 2010
+      note:
+      description: |
+        - Developed website using Wordpress
+        - Extended Wordpress with BuddyPress plugin (buddypress.org)
+        - Developed website using ModX (modx.com)
+        - Experience maintaining a website in Plone (plone.org)
+        - Communicate with local clients on their needs on the website
+        - Experience with Bash and SSH
+
+    - employer: University of the Immaculate Conception
+      title: Instructor
+      location: 'Davao City, Philippines'
+      dates: June 2009 – October 2010
+      note:
+      description: |
+        Teaching
+
+        - Thought students the basic of Photoshop
+        - Thought students 3d animation with Blender
+        - Thought students on integrating graphics related applications, such as Photoshop to Blender.
+        - Automated grade output of all students for three semesters with Moodle (moodle.org)
+        - Quizzes, exams and attendance are all saved in Moodle
+        - Students are able to see their final grade after the final exams in Moodle
+
+        School Events
+
+        - Organized the first major event for Multimedia students, The Next of Brands (facebook.com/nextofbrands)
+        - Managed and monitored students output for the exhibition
+        - Prepared students for a major event by letting them produce output in two phases
+        - Liaised with the school for technical support and event location
+        - Gathered sponsors, angels, and providers
+        - Gathered senior designers, photographers, and business owners to be a speaker for the event
+        - Managed collaterals such as t-shirts, badges, and posters
+
+    - employer: Creative Response
+      title: Web Designer
+      location: 'Davao City, Philippines'
+      dates: July 2009 – December 2009
+      note:
+      description: |
+        - Developed themes for custom CMS
+        - Designed mockups for print, logo, and 3d visualization
+        - Ensured cross browser compatibility for the websites being developed
+
+event:
+
+    - name: 1st ICean Congress
+      date: February 2010
+      location: 'Davao, Philippines'
+      description: |
+        Principles of Web Design (Audience: 300)
+
+    - name: Software Freedom Day
+      date: 'September 2007 & 2008'
+      location: 'Davao, Philippines'
+      description: |
+        Showcased new features of Blender 3D (Audience: 50-100)
+        <br/>Introduced Camera Tracking/Match Moving using Blender 3D with Voodoo (Audience: 300-500)
+
+    - name: 5th Mindanao Student Information Technology Education Conference
+      date: December 2007
+      location: 'Davao, Philippines'
+      description: |
+        Showcased Blender 3D for animation and graphic design (Audience: 1500)
+
+
+education:
+
+    - name: Bachelor of Science in Information Technology
+      description: |
+        University of the Immaculate Conception
+
+        Graduate – March 22, 2009
