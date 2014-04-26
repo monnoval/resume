@@ -1,0 +1,49 @@
+!!!
+/[if lt IE 7] <html class='no-js lt-ie9 lt-ie8 lt-ie7' lang='en'>
+/[if IE 7] <html class='no-js lt-ie9 lt-ie8' lang='en'>
+/[if IE 8] <html class='no-js lt-ie9' lang='en'>
+<!--[if gt IE 8]><!-->
+%html{:class => 'no-js', :lang => 'en'}<>
+  <!--<![endif]-->
+  = partial "layouts/head"
+  %body{:class => "page #{page_classes}" }
+    = partial "layouts/chromeframe"
+    .site.hfeed
+      %header.site-header
+        %h1.info-name
+          = data.resume.info.name
+        .info-shortdesc
+          = data.resume.info.shortdesc
+        %h2
+          Summary
+        = markdown(data.resume.info.desc)
+      .site-content
+        .content-area
+          .site-main
+            %h2
+              Experience
+            - data.resume.work.each do |work|
+              .work
+                %h3.work-title=    work.title
+                %h4.work-employer= work.employer
+                %p.work-dates=     work.dates
+                %p.work-location=  work.location
+                .work-location=    markdown(work.description)
+
+        .widget-area
+          .widget.widget_text
+            %h2
+              Contact
+            %ul
+              - data.resume.contact.each do |contact|
+                %li
+                  = succeed ":" do
+                    = contact.name
+                  = markdown_unwrap_p(contact.link)
+
+    / = partial "layouts/footer"
+    - if content_for?(:footer)
+      = yield_content :footer
+    / = partial "layouts/jquery"
+    - if content_for?(:script)
+      = yield_content :script

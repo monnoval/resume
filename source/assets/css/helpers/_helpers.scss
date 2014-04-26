@@ -1,0 +1,15 @@
+.uppercase {
+	text-transform: uppercase;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.clearfix {
+  @include clearfix();
+}
+
+.no-margin {
+  margin: 0;
+}
