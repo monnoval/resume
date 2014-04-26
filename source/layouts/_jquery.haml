@@ -2,3 +2,15 @@
 :javascript
   window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')
 = javascript_include_tag 'followMeBar'
+:javascript
+  $( document ).ready(function() {
+    // Back to top button
+    $(window).scroll(function(){
+      if ($(this).scrollTop() > 400) $('#backtotop').fadeIn();
+      else $('#backtotop').fadeOut();
+    });
+    $('#backtotop').click(function(){
+      $("html, body").animate({ scrollTop: 0 }, 600);
+      return false;
+    });
+  });

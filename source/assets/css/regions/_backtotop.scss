@@ -1,0 +1,29 @@
+/**
+ * Back to top button
+ *
+ * Used in all pages.
+ *
+ * Example HTML:
+ *
+ * <a href="#" id="backtotop" class="backtotop"></a>
+ *
+ */
+
+a.backtotop {
+  /*background-color: #bebebe;*/
+  /*background-color: rgba(190,190,190,0.8);*/
+  background: url(../img/backtotop.png) no-repeat;
+  width: 100px;
+  height: 90px;
+  outline: none;
+}
+a.backtotop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: none;
+}
+a.backtotop {
+  font-size: 11px;
+  text-decoration: none;
+}
