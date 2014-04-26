@@ -2,4 +2,18 @@
    Layout
    ========================================================================== */
 
+.site {
+	width: $site-width;
+	margin: 0 auto;
+}
 
+.content-area {
+	width: $site-content-width;
+	float: left;
+}
+
+.widget-area {
+	margin-left: $site-widget-margin;
+	width: $site-widget-width;
+	float: left;
+}

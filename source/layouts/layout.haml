@@ -6,40 +6,40 @@
 %html{:class => 'no-js', :lang => 'en'}<>
   <!--<![endif]-->
   = partial "layouts/head"
-  %body{:class => "page #{page_classes}" }
+  %body{:class => "#{page_classes}" }
     = partial "layouts/chromeframe"
     .site.hfeed
       %header.site-header
-        %h1.info-name
-          = data.resume.info.name
-        .info-shortdesc
-          = data.resume.info.shortdesc
-        %h2
-          Summary
-        = markdown(data.resume.info.desc)
+        %h1.info-name= data.resume.info.name
+        .info-shortdesc.lowercase= data.resume.info.shortdesc
       .site-content
         .content-area
           .site-main
-            %h2
-              Experience
-            - data.resume.work.each do |work|
-              .work
-                %h3.work-title=    work.title
-                %h4.work-employer= work.employer
-                %p.work-dates=     work.dates
-                %p.work-location=  work.location
-                .work-location=    markdown(work.description)
+            .section
+              %h2 Summary
+              .article
+                = markdown(data.resume.info.desc)
+            .section
+              %h2 Experience
+              - data.resume.work.each do |work|
+                .work.article
+                  %h3.work-title=    work.title
+                  %h4.work-employer= work.employer
+                  %p.work-dates=     work.dates
+                  %p.work-location=  work.location
+                  .work-desc=    markdown(work.description)
 
         .widget-area
           .widget.widget_text
-            %h2
-              Contact
-            %ul
-              - data.resume.contact.each do |contact|
-                %li
-                  = succeed ":" do
-                    = contact.name
-                  = markdown_unwrap_p(contact.link)
+            .section
+              %h2 Contact
+              .article
+                %ul
+                  - data.resume.contact.each do |contact|
+                    %li
+                      = succeed ":" do
+                        = contact.name
+                      = markdown_unwrap_p(contact.link)
 
     / = partial "layouts/footer"
     - if content_for?(:footer)
