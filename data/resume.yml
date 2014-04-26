@@ -18,14 +18,14 @@ info:
       - Experience with awesome web technologies, SASS, HAML, Middleman, SingularityGS
 
 contact:
+    - name: blog
+      link: '[monnoval.com](http://monnoval.com)'
     - name: email
       link: '<mon@monnoval.com>'
     - name: twitter
       link: '[@monnoval](http://twitter.com/monnoval)'
     - name: github
       link: '[github.com/monnoval](https://github.com/monnoval)'
-    - name: blog
-      link: '[monnoval.com](http://monnoval.com)'
     - name: linkedin
       link: '[linkedin.com/in/monnoval](http://www.linkedin.com/in/monnoval)'
 

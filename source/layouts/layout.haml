@@ -44,16 +44,12 @@
                   %h3.event-name=    school.name
                   .event-desc.desc=  markdown(school.description)
         .widget-area
-          .widget.widget_text
-            .section
-              %h2 Contact
-              .article
-                %ul
-                  - data.resume.contact.each do |contact|
-                    %li
-                      = succeed ":" do
-                        = contact.name
-                      = markdown_unwrap_p(contact.link)
+          .widget.widget-contact
+            %h2 &nbsp;
+            %ul
+              - data.resume.contact.each do |contact|
+                %li
+                  = markdown_unwrap_p(contact.link)
 
     / = partial "layouts/footer"
     - if content_for?(:footer)
