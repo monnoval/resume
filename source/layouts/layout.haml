@@ -46,19 +46,16 @@
                   .event-desc.desc=  markdown(school.description)
         .widget-area
           .widget.widget-contact{:data => {:spy => "affix"}}
-            %ul
-              %li
-                %a
-                  HTML
-                <i class="fa fa-code"></i>
-              %li
-                %a
-                  PDF
+            .btn-group-vertical.btn-download
+              %a.btn.btn-default{:role => 'button'}
+                Download PDF
                 <i class="fa fa-print"></i>
-              %li
-                %a
-                  YAML
+              %a.btn.btn-default{:role => 'button'}
+                Download Text
                 <i class="fa fa-file-text"></i>
+              %a.btn.btn-default{:role => 'button'}
+                Source at Github
+                <i class="fa fa-code"></i>
             %h2 &nbsp;
             %ul
               - data.resume.contact.each do |contact|

@@ -1,0 +1,28 @@
+
+@import "dependencies/bootstrap/variables";
+@import "dependencies/bootstrap/mixins";
+@import "dependencies/bootstrap/buttons";
+@import "dependencies/bootstrap/button-groups";
+
+
+.btn-group-vertical > .btn {
+	border-radius: 0 !important;
+	border: 0 none;
+}
+
+.btn-download > a.btn {
+	width: auto;
+	text-align: right;
+	margin: 21px -16px 0 0;
+	color: $gray-light;
+
+	> i {
+		width: 30px;
+		font-size: 20px;
+		text-align: center;
+	}
+}
+.btn-download {
+	border-bottom: 4px solid $white;
+	width: 100%;
+}
