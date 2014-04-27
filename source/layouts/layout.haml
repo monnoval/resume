@@ -46,15 +46,11 @@
                   %h3.event-name=    school.name
                   .event-desc.desc=  markdown(school.description)
         .widget-area
-          .widget.widget-contact
+          .widget.widget-contact{:data => {:spy => "affix"}}
             %h2 &nbsp;
             %ul
               - data.resume.contact.each do |contact|
                 %li
                   = markdown_unwrap_p(contact.link)
     = link_to '', '#', :id => "backtotop", :class => "backtotop"
-    - if content_for?(:footer)
-      = yield_content :footer
     = partial "layouts/jquery"
-    - if content_for?(:script)
-      = yield_content :script
