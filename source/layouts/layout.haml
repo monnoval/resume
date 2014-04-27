@@ -10,12 +10,11 @@
     = partial "layouts/chromeframe"
     .site.hfeed
       %header.site-header
-        %h1.info-name= data.resume.info.name
-        .info-shortdesc.lowercase= data.resume.info.shortdesc
       .site-content
         .content-area
           .site-main
-            #top_holder
+            %h1.info-name= data.resume.info.name
+            .info-shortdesc.lowercase= data.resume.info.shortdesc
             .section
               %h2.followMeBar Summary
               .article
@@ -47,6 +46,19 @@
                   .event-desc.desc=  markdown(school.description)
         .widget-area
           .widget.widget-contact{:data => {:spy => "affix"}}
+            %ul
+              %li
+                %a
+                  HTML
+                <i class="fa fa-code"></i>
+              %li
+                %a
+                  PDF
+                <i class="fa fa-print"></i>
+              %li
+                %a
+                  YAML
+                <i class="fa fa-file-text"></i>
             %h2 &nbsp;
             %ul
               - data.resume.contact.each do |contact|

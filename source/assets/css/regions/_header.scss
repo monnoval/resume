@@ -18,13 +18,13 @@
 .info-shortdesc {
 	font-size: ceil($font-size-base * 1.25); // ~18px
 	font-weight: bold;
-	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 4px solid $gray-lighter;
 }
 
 .content-area {
-	border-top: 4px solid $gray-lighter;
 }
 
-.widget-area {
-	border-top: 4px solid $white;
+.widget-area .info-shortdesc {
+	border-bottom-color: $white;
 }
