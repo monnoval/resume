@@ -49,3 +49,12 @@
 }
 
 
+
+@media print {
+	.site-content h2,
+	.date,
+	.location {
+		color: $black;
+	}
+}
+
