@@ -1,0 +1,67 @@
+<%= data.resume.info.name %>
+
+<%= data.resume.info.shortdesc.downcase %>
+
+------------------------------------------------------
+
+Summary
+---------------------------
+
+<%= data.resume.info.desc %>
+
+------------------------------------------------------
+
+Experience
+<% data.resume.work.each do |work| %>
+---------------------------
+
+<%= work.title %>
+
+<%= work.employer %>
+
+<%= work.dates %> | <%= work.location %>
+
+
+<%= work.description %>
+
+<% end %>
+
+------------------------------------------------------
+
+Speaking Engagements
+<% data.resume.event.each do |event| %>
+---------------------------
+
+<%= event.name %>
+
+<%= event.date %> | <%= event.location %>
+
+
+<%= event.description %>
+
+<% end %>
+
+------------------------------------------------------
+
+Education
+<% data.resume.education.each do |school| %>
+---------------------------
+
+<%= school.name %>
+
+<%= school.description %>
+
+<% end %>
+
+------------------------------------------------------
+
+<% data.resume.download.each do |download| %>
+<%= download.title %> (<%= download.link %>)
+<% end %>
+
+------------------------------------------------------
+
+<% data.resume.contact.each do |contact| %>
+<%= contact.name %>: <%= contact.link %>
+
+<% end %>

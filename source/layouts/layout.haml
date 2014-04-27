@@ -37,7 +37,6 @@
                   %p.event-date.date=     event.date
                   %p.event-location.location= event.location
                   .event-desc.desc=    markdown(event.description)
-
             .section
               %h2.followMeBar Education
               - data.resume.education.each do |school|
@@ -47,15 +46,10 @@
         .widget-area
           .widget.widget-contact{:data => {:spy => "affix"}}
             .btn-group-vertical.btn-download
-              %a.btn.btn-default{:role => 'button'}
-                Download PDF
-                <i class="fa fa-print"></i>
-              %a.btn.btn-default{:role => 'button'}
-                Download Text
-                <i class="fa fa-file-text"></i>
-              %a.btn.btn-default{:role => 'button'}
-                Source at Github
-                <i class="fa fa-code"></i>
+              - data.resume.download.each do |download|
+                %a.btn.btn-default{:href => "#{download.link}", :target => "_blank", :role => 'button'}
+                  = download.title
+                  <i class="fa fa-#{download.icon}"></i>
             %h2 &nbsp;
             %ul
               - data.resume.contact.each do |contact|

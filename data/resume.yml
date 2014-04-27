@@ -29,12 +29,23 @@ contact:
     - name: linkedin
       link: '[linkedin.com/in/monnoval](http://www.linkedin.com/in/monnoval)'
 
+download:
+    - title: Download PDF
+      link: '/monnoval-resume.pdf'
+      icon: 'print'
+    - title: Download Text
+      link: '/index.txt'
+      icon: 'file-text'
+    - title: Source at Github
+      link: 'http://github.com/monnoval/resume'
+      icon: 'code'
+
 work:
 
     - employer: Flava Design LLP
       title: Web Developer
       location: '994 bendemeer road b-central #07-03 singapore 339943'
-      dates: April 2013 – Present
+      dates: April 2013 - Present
       note:
       description: |
         - Developed static websites in Jekyll (jekyllrb.com) and Compass (compass-style.org)
@@ -54,7 +65,7 @@ work:
     - employer: Codebox Pte Ltd
       title: User Interface Lead (Web and Mobile)
       location: '54b south bridge road singapore 058685'
-      dates: November 2011 – March 2013
+      dates: November 2011 - March 2013
       note:
       description: |
         Web and Software Development
@@ -95,7 +106,7 @@ work:
     - employer: Codebox Pte Ltd
       title: Web Designer
       location: '54b south bridge road singapore 058685'
-      dates: October 2010 – November 2011
+      dates: October 2010 - November 2011
       note:
       description: |
         - Expert-level CSS skills and the ability to write clean, well-structured CSS.
@@ -112,7 +123,7 @@ work:
     - employer: Afterfive Technologies
       title: Web Designer and Theme Developer
       location: 'Davao City, Philippines'
-      dates: February 2010 – October 2010
+      dates: February 2010 - October 2010
       note:
       description: |
         - Developed website using Wordpress
@@ -125,7 +136,7 @@ work:
     - employer: University of the Immaculate Conception
       title: Instructor
       location: 'Davao City, Philippines'
-      dates: June 2009 – October 2010
+      dates: June 2009 - October 2010
       note:
       description: |
         Teaching
@@ -150,7 +161,7 @@ work:
     - employer: Creative Response
       title: Web Designer
       location: 'Davao City, Philippines'
-      dates: July 2009 – December 2009
+      dates: July 2009 - December 2009
       note:
       description: |
         - Developed themes for custom CMS
@@ -170,7 +181,8 @@ event:
       location: 'Davao, Philippines'
       description: |
         Showcased new features of Blender 3D (Audience: 50-100)
-        <br/>Introduced Camera Tracking/Match Moving using Blender 3D with Voodoo (Audience: 300-500)
+
+        Introduced Camera Tracking/Match Moving using Blender 3D with Voodoo (Audience: 300-500)
 
     - name: 5th Mindanao Student Information Technology Education Conference
       date: December 2007
@@ -185,4 +197,4 @@ education:
       description: |
         University of the Immaculate Conception
 
-        Graduate – March 22, 2009
+        Graduate - March 22, 2009
