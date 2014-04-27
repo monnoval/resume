@@ -16,8 +16,11 @@
 	margin: 21px -16px 0 0;
 	color: $gray-light;
 
+	&:active,
+	&:focus,
 	&:hover {
 		background: none;
+		box-shadow: none;
 		color: $gray;
 	}
 
@@ -30,4 +33,10 @@
 .btn-download {
 	border-bottom: 4px solid $white;
 	width: 100%;
+}
+
+@media print {
+	.btn-download > a {
+		visibility: hidden;
+	}
 }
