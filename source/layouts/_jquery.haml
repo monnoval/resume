@@ -1,0 +1,29 @@
+= javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'
+:javascript
+  window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')
+= javascript_include_tag 'followMeBar'
+= javascript_include_tag 'bootstrap/affix.js'
+:javascript
+  $( document ).ready(function() {
+    // Back to top button
+    $(window).scroll(function(){
+      if ($(this).scrollTop() > 400) $('#backtotop').fadeIn()
+      else $('#backtotop').fadeOut()
+    })
+    $('#backtotop').click(function(){
+      $("html, body").animate({ scrollTop: 0 }, 600)
+      return false;
+    })
+
+    // Affix
+    $('.widget-contact').affix({
+      offset: {
+        top: 0
+      }
+    })
+    // $('.info').affix({
+    //  offset: {
+    //    top: 0
+    //  }
+    //})
+  });

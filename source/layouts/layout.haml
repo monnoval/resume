@@ -1,0 +1,65 @@
+!!!
+/[if lt IE 7] <html class='no-js lt-ie9 lt-ie8 lt-ie7' lang='en'>
+/[if IE 7] <html class='no-js lt-ie9 lt-ie8' lang='en'>
+/[if IE 8] <html class='no-js lt-ie9' lang='en'>
+<!--[if gt IE 8]><!-->
+%html{:class => 'no-js', :lang => 'en'}<>
+  <!--<![endif]-->
+  = partial "layouts/head"
+  %body{:class => "#{page_classes}" }
+    = partial "layouts/chromeframe"
+    .site.hfeed
+      %header.site-header
+      .site-content
+        .content-area
+          .site-main
+            %h1.info-name= data.resume.info.name
+            .info-shortdesc.lowercase= data.resume.info.shortdesc
+            .section
+              %h2.followMeBar Summary
+              .article
+                %p
+                = markdown(data.resume.info.desc)
+            .section
+              %h2.followMeBar Experience
+              - data.resume.work.each do |work|
+                .work.article
+                  %h3.work-title=    work.title
+                  %h4.work-employer= work.employer
+                  %p.work-dates.date=     work.dates
+                  %p.work-location.location=  work.location
+                  .work-desc.desc=    markdown(work.description)
+            .section
+              %h2.followMeBar Speaking Engagements
+              - data.resume.event.each do |event|
+                .work.article
+                  %h3.event-name=    event.name
+                  %p.event-date.date=     event.date
+                  %p.event-location.location= event.location
+                  .event-desc.desc=    markdown(event.description)
+
+            .section
+              %h2.followMeBar Education
+              - data.resume.education.each do |school|
+                .work.article
+                  %h3.event-name=    school.name
+                  .event-desc.desc=  markdown(school.description)
+        .widget-area
+          .widget.widget-contact{:data => {:spy => "affix"}}
+            .btn-group-vertical.btn-download
+              %a.btn.btn-default{:role => 'button'}
+                Download PDF
+                <i class="fa fa-print"></i>
+              %a.btn.btn-default{:role => 'button'}
+                Download Text
+                <i class="fa fa-file-text"></i>
+              %a.btn.btn-default{:role => 'button'}
+                Source at Github
+                <i class="fa fa-code"></i>
+            %h2 &nbsp;
+            %ul
+              - data.resume.contact.each do |contact|
+                %li
+                  = markdown_unwrap_p(contact.link)
+    = link_to '', '#', :id => "backtotop", :class => "backtotop"
+    = partial "layouts/jquery"

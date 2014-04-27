@@ -1,0 +1,188 @@
+info:
+    name: Marlo Simon Noval
+    shortdesc: Front-end Web Developer always, Back-end Dev sometimes
+    desc: |
+      __Front-End__ is overwhelming, I swam in the vast realm of tomato sauce poured in a maintainable spaghetti code just to do a tiny push of a pixel.
+
+      __Back-end developers__ loves designers who code. Being in the front-end pool crosses my boundaries of user interface design and development.
+
+      __My bonus points:__
+
+      - Blurred the lines between front-end and back-end development
+      - Blurred the lines between front-end and back-end development
+      - Not afraid of cross browser nuances
+      - Ensures maintainable and modular code
+      - Loves the command line
+      - Huge fan of using version control such as Mercurial and Git
+      - Able to collaborate with other engineers, designers and product managers
+      - Experience with awesome web technologies, SASS, HAML, Middleman, SingularityGS
+
+contact:
+    - name: blog
+      link: '[monnoval.com](http://monnoval.com)'
+    - name: email
+      link: '<mon@monnoval.com>'
+    - name: twitter
+      link: '[@monnoval](http://twitter.com/monnoval)'
+    - name: github
+      link: '[github.com/monnoval](https://github.com/monnoval)'
+    - name: linkedin
+      link: '[linkedin.com/in/monnoval](http://www.linkedin.com/in/monnoval)'
+
+work:
+
+    - employer: Flava Design LLP
+      title: Web Developer
+      location: '994 bendemeer road b-central #07-03 singapore 339943'
+      dates: April 2013 – Present
+      note:
+      description: |
+        - Developed static websites in Jekyll (jekyllrb.com) and Compass (compass-style.org)
+        - Developed static websites using Middleman (middlemanapp.com)
+        - Developed html using HAML (haml.info) in Middleman
+        - Developed CSS with SASS (sass-lang.com)
+        - Developed web interaction using jQuery
+        - Developed responsive or mobile friendly websites
+        - Developed E-Commerce websites in PrestaShop (prestashop.com)
+        - Developed websites in Wordpress
+        - Extended PHP E-Commerce websites from third party software vendors
+        - Developed Web Forms in ASP.net
+        - Maintains project source code via Mercurial or Git (source control)
+        - Runs manual tests for web projects before giving to clients
+        - Communicate with third party software vendors for requirements, and timeline
+
+    - employer: Codebox Pte Ltd
+      title: User Interface Lead (Web and Mobile)
+      location: '54b south bridge road singapore 058685'
+      dates: November 2011 – March 2013
+      note:
+      description: |
+        Web and Software Development
+
+        - Designed and developed user interfaces for iPhone and Android apps
+        - Rapid prototyping for user interactions and flows
+        - Designed and developed prototypes for project pitches
+        - Designed a UI right from a quick paper sketch to HTML/CSS
+        - Developed theme in Wordpress
+        - Developed and extended features in Prestashop
+        - Experience on using Bootstrap
+        - Developed in Visual Studio mostly for front-end
+        - Debugged and collaborated with developers to fix issues in .Net projects
+        - Debugged and fixed issues in iPhone, iPad and Android app
+
+        Software Deployment and Maintenance
+
+        - Managed deployment of iOS app to testers via TestFlight (testflightapp.com)
+        - Managed deployment of Android app to testers via IntelliJ IDEA (www.jetbrains.com/idea)
+        - Deployed mobile apps for both iOS AppStore and Android PlayStore
+        - Maintained and monitored source code commits in Subversion (subversion.tigris.org)
+        - Managed backups of File Server, SVN Server and Staging/Live Servers via Acronis
+        - Deployment and maintenance of virtual machines running on Parallels for individual servers
+        - Supported programmers on any issues encountered on their IDE on both Windows and Mac
+
+        Project Management
+
+        - Communicate on a technical level with programmers
+        - Collaborate with product owner, project managers and stakeholders
+        - Confirmed and finalized requirements before production
+        - Experience on billing clients for web and software projects
+        - Experience on managing timeline for both web and software projects
+        - Experience on Agile Software Development with Scrum for both managing people and projects
+        - Managed scope and budget as project deliverables
+        - Communicate and help team members to perform better on a daily basis
+        - Maintained documentation for projects to assure internal team and clients have the same expectation
+
+    - employer: Codebox Pte Ltd
+      title: Web Designer
+      location: '54b south bridge road singapore 058685'
+      dates: October 2010 – November 2011
+      note:
+      description: |
+        - Expert-level CSS skills and the ability to write clean, well-structured CSS.
+        - Ability to use CSS for complex layouts such as grid systems and fluid layout.
+        - Optimized loading of images by using CSS Sprites.
+        - Cross browser compatibility from IE6, IE7, IE8 up to the latest browser.
+        - Experience using HTML 5 Boilerplate (html5boilerplate.com)
+        - Experience with mock up tools, wireframes and rapid prototyping.
+        - Experience on using Apache Ant (ant.apache.org) to compress both css and javascript.
+        - Experience with continuos integration for software maintainability
+        - Experience on step by step software development cycle from requirements, design, development and deployment.
+        - Experience with graphic design.
+
+    - employer: Afterfive Technologies
+      title: Web Designer and Theme Developer
+      location: 'Davao City, Philippines'
+      dates: February 2010 – October 2010
+      note:
+      description: |
+        - Developed website using Wordpress
+        - Extended Wordpress with BuddyPress plugin (buddypress.org)
+        - Developed website using ModX (modx.com)
+        - Experience maintaining a website in Plone (plone.org)
+        - Communicate with local clients on their needs on the website
+        - Experience with Bash and SSH
+
+    - employer: University of the Immaculate Conception
+      title: Instructor
+      location: 'Davao City, Philippines'
+      dates: June 2009 – October 2010
+      note:
+      description: |
+        Teaching
+
+        - Thought students the basic of Photoshop
+        - Thought students 3d animation with Blender
+        - Thought students on integrating graphics related applications, such as Photoshop to Blender.
+        - Automated grade output of all students for three semesters with Moodle (moodle.org)
+        - Quizzes, exams and attendance are all saved in Moodle
+        - Students are able to see their final grade after the final exams in Moodle
+
+        School Events
+
+        - Organized the first major event for Multimedia students, The Next of Brands (facebook.com/nextofbrands)
+        - Managed and monitored students output for the exhibition
+        - Prepared students for a major event by letting them produce output in two phases
+        - Liaised with the school for technical support and event location
+        - Gathered sponsors, angels, and providers
+        - Gathered senior designers, photographers, and business owners to be a speaker for the event
+        - Managed collaterals such as t-shirts, badges, and posters
+
+    - employer: Creative Response
+      title: Web Designer
+      location: 'Davao City, Philippines'
+      dates: July 2009 – December 2009
+      note:
+      description: |
+        - Developed themes for custom CMS
+        - Designed mockups for print, logo, and 3d visualization
+        - Ensured cross browser compatibility for the websites being developed
+
+event:
+
+    - name: 1st ICean Congress
+      date: February 2010
+      location: 'Davao, Philippines'
+      description: |
+        Principles of Web Design (Audience: 300)
+
+    - name: Software Freedom Day
+      date: 'September 2007 & 2008'
+      location: 'Davao, Philippines'
+      description: |
+        Showcased new features of Blender 3D (Audience: 50-100)
+        <br/>Introduced Camera Tracking/Match Moving using Blender 3D with Voodoo (Audience: 300-500)
+
+    - name: 5th Mindanao Student Information Technology Education Conference
+      date: December 2007
+      location: 'Davao, Philippines'
+      description: |
+        Showcased Blender 3D for animation and graphic design (Audience: 1500)
+
+
+education:
+
+    - name: Bachelor of Science in Information Technology
+      description: |
+        University of the Immaculate Conception
+
+        Graduate – March 22, 2009

@@ -1,0 +1,46 @@
+/*
+   Typography
+   ========================================================================== */
+
+%helvetica {
+	font-family: $helvetica;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	@extend %helvetica;
+	color: $site-text-color;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+}
+
+p {
+	margin: 0 0 ($line-height-computed / 2);
+}
+
+ul,
+ol {
+	margin-top: 0;
+	margin-bottom: ($line-height-computed / 2);
+	padding-left: 1.25em;
+	ul,
+	ol{
+		margin-bottom: 0;
+	}
+}
+
+a {
+	color: $gray-light;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		color: $gray;
+		text-decoration: underline;
+	}
+}
+
+
