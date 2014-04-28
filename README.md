@@ -1,6 +1,6 @@
 # Mon's Resume
 
-I love updating my resume. I thought LinkedIn was enough but I needed to generate PDF after any update is done. I also needed to store the information in one location separate with any styles and layout. Hosting my resume is one main thing, so that I could just to anyone a link, no need for me to compose an email and attach a pdf.
+I love updating my resume. I thought LinkedIn was enough but I needed to generate PDF after any update is done. I also needed to store the information in one location separate with any styles and layout. Hosting my resume is one main thing, so that I could just send anyone a link, no need for me to compose an email and attach a pdf.
 
 View my resume here:
 [resume.monnoval.com](http://resume.monnoval.com)
@@ -25,4 +25,4 @@ View my resume here:
 
 data/resume.yml is property of Mon Noval. You are welcome to use it as a base structure for your resume, but don't forget, you are not him.
 
-The rest of the code is licensed CC-GPL. Remember sharing is caring.
+The rest of the code is under [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/). Remember sharing is caring.
