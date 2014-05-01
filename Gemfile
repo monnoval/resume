@@ -11,3 +11,6 @@ gem "middleman-livereload", "~> 3.1.0"
 gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 
 gem 'middleman-gh-pages'
+
+gem "pdfkit", "~>0.5.2"
+gem 'wkhtmltopdf_binary_provider'

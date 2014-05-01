@@ -31,7 +31,7 @@ contact:
 
 download:
     - title: Download PDF
-      link: '/monnoval-resume.pdf'
+      link: '/resume.pdf'
       icon: 'print'
     - title: Download Text
       link: '/index.txt'

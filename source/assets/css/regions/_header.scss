@@ -6,10 +6,9 @@
 }
 
 .info-name {
-	font-size: floor($font-size-base * 4.30); // ~60px
+	font-size: floor($font-size-base * 4); // ~56px
 	font-weight: bold;
 	line-height: $line-height-larger;
-	letter-spacing: -2px;
 	margin-bottom: 0;
 	margin-left: -4px;
 }

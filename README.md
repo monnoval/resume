@@ -31,9 +31,10 @@ View my resume here:
 
 This resume was inspired by the following projects:
 
-- [Resume Man](https://github.com/reefab/ResumeMan)
+- [ResumeMan by Fabien Piuzzi](https://github.com/reefab/ResumeMan)
 - [Harper's Resume](https://github.com/harperreed/resume)
 - [Ming-Ho's Resume](https://github.com/mhyee/resume)
+- [Dan Mayer's Resume](https://github.com/danmayer/Resume)
 
 ## License
 
