@@ -7,18 +7,24 @@ I love updating my resume. I thought LinkedIn was enough but I needed to generat
 View my resume here:
 [resume.monnoval.com](http://resume.monnoval.com)
 
+## Features
+
+- Resume information is in data/resume.yml
+- Run using [Middleman](http://middlemanapp.com)
+- Deploy to github with using [Middleman GH Pages](https://github.com/neo/middleman-gh-pages)
+- Automatic PDF generation using [wkhtmltopdf](http://wkhtmltopdf.org)
+
 ## Installation
 
  1. Fork this project
  2. Modify `data/resume.yml` to be your resume.
  3. Edit source/assets/* to make your resume look prettier.
  4. Install the gems. The easiest way to do this is `gem install bundler && bundle install`
- 5. type `middleman` to run locally.
+ 5. Type `middleman` to run locally.
  6. To deploy to [github pages](https://pages.github.com/), run `rake build` then `rake publish`. For more info, you can refer at [middleman-gh-pages](https://github.com/neo/middleman-gh-pages)
 
 ## TODOs
 
-- Automatic PDF generation
 - Responsive layout
 - Have a simpler one column theme
 - Support for [h-resume microformat](http://microformats.org/wiki/h-resume)
