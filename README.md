@@ -2,6 +2,8 @@
 
 I love updating my resume. I thought LinkedIn was enough but I needed to generate PDF after any update is done. I also needed to store the information in one location separate with any styles and layout. Hosting my resume is one main thing, so that I could just send anyone a link, no need for me to compose an email and attach a pdf.
 
+## Preview
+
 View my resume here:
 [resume.monnoval.com](http://resume.monnoval.com)
 
@@ -17,9 +19,21 @@ View my resume here:
 ## TODOs
 
 - Automatic PDF generation
+- Responsive layout
 - Have a simpler one column theme
 - Support for [h-resume microformat](http://microformats.org/wiki/h-resume)
-- List all projects inspired by this
+- Support for old browsers (IE7, IE8)
+- Social icons for twitter, linkedin, github, emaillayout
+- Step by step guide using [bootstro.js](http://clu3.github.io/bootstro.js) or [trip.js](http://eragonj.github.io/Trip.js/) or [intro.js](http://usablica.github.io/intro.js)
+- Landing intro before they looking at the resume. Hmmm this needs some thinking
+
+## Credits
+
+This resume was inspired by the following projects:
+
+- [Resume Man](https://github.com/reefab/ResumeMan)
+- [Harper's Resume](https://github.com/harperreed/resume)
+- [Ming-Ho's Resume](https://github.com/mhyee/resume)
 
 ## License
 
