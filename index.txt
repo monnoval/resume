@@ -190,7 +190,7 @@ Graduate - March 22, 2009
 
 ------------------------------------------------------
 
-Download PDF (/monnoval-resume.pdf)
+Download PDF (/resume.pdf)
 Download Text (/index.txt)
 Source at Github (http://github.com/monnoval/resume)
 

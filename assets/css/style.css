@@ -286,10 +286,9 @@ h6 {
    Header
    ========================================================================== */
 .info-name {
-  font-size: 60px;
+  font-size: 56px;
   font-weight: bold;
   line-height: 1.1;
-  letter-spacing: -2px;
   margin-bottom: 0;
   margin-left: -4px; }
 
@@ -792,7 +791,7 @@ input[type="button"].btn-block {
 .btn-download > a.btn {
   width: auto;
   text-align: right;
-  margin: 21px -16px 0 0;
+  margin: 16px -16px 0 0;
   color: #999999; }
   .btn-download > a.btn:active, .btn-download > a.btn:focus, .btn-download > a.btn:hover {
     background: none;
