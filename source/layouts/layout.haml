@@ -24,19 +24,19 @@
               %h2.followMeBar Experience
               - data.resume.work.each do |work|
                 .work.article
-                  %h3.work-title=    work.title
-                  %h4.work-employer= work.employer
-                  %p.work-dates.date=     work.dates
+                  %h3.work-title=     work.title
+                  %h4.work-employer=  work.employer
+                  %p.work-dates.date= work.dates
                   %p.work-location.location=  work.location
                   .work-desc.desc=    markdown(work.description)
             .section
               %h2.followMeBar Speaking Engagements
               - data.resume.event.each do |event|
                 .work.article
-                  %h3.event-name=    event.name
-                  %p.event-date.date=     event.date
+                  %h3.event-name=     event.name
+                  %p.event-date.date= event.date
                   %p.event-location.location= event.location
-                  .event-desc.desc=    markdown(event.description)
+                  .event-desc.desc=   markdown(event.description)
             .section
               %h2.followMeBar Education
               - data.resume.education.each do |school|
@@ -44,7 +44,7 @@
                   %h3.event-name=    school.name
                   .event-desc.desc=  markdown(school.description)
         .widget-area
-          .widget.widget-contact{:data => {:spy => "affix"}}
+          .widget.widget-contact
             .btn-group-vertical.btn-download
               - data.resume.download.each do |download|
                 %a.btn.btn-default{:href => "#{download.link}", :target => "_blank", :role => 'button'}
