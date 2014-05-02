@@ -8,3 +8,11 @@
 .widget-contact.affix {
 	width: 225px;
 }
+
+@media all and (max-width: 800px) {
+
+	.affix {
+	  position: static;
+	}
+
+}

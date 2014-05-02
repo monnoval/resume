@@ -3,8 +3,9 @@
    ========================================================================== */
 
 .site {
-	width: $site-width;
+	max-width: $site-width;
 	margin: 0 auto;
+	padding: 0 20px;
 }
 
 .content-area {
@@ -17,4 +18,19 @@
 	margin-left: $site-widget-margin;
 	width: $site-widget-width;
 	float: left;
+}
+
+@media all and (max-width: 800px) {
+
+	.content-area {
+		width: auto;
+		float: none;
+	}
+
+	.widget-area {
+		margin-left: 0;
+		width: auto;
+		float: none;
+	}
+
 }

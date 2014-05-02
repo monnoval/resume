@@ -35,6 +35,13 @@
 	width: 100%;
 }
 
+@media all and (max-width: 800px) {
+	.btn-download > a.btn {
+		padding: 5px 0;
+		margin-top: 13px;
+	}
+}
+
 @media print {
 	.btn-download > a {
 		visibility: hidden;
