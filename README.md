@@ -13,6 +13,7 @@ View my resume here:
 - Run using [Middleman](http://middlemanapp.com)
 - Deploy to github with using [Middleman GH Pages](https://github.com/neo/middleman-gh-pages)
 - Automatic PDF generation using [wkhtmltopdf](http://wkhtmltopdf.org)
+- Responsive layout
 
 ## Installation
 
@@ -25,7 +26,6 @@ View my resume here:
 
 ## TODOs
 
-- Responsive layout
 - Have a simpler one column theme
 - Support for [h-resume microformat](http://microformats.org/wiki/h-resume)
 - Support for old browsers (IE7, IE8)
