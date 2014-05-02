@@ -12,6 +12,7 @@
 	}
 	ul {
 		list-style-type: none;
+		padding: 0;
 	}
 }
 
@@ -19,6 +20,10 @@
 	.widget {
 		text-align: center;
 
+	}
+
+	.widget-contact ul > li {
+		padding-bottom: 15px
 	}
 }
 
