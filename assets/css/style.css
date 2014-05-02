@@ -190,8 +190,9 @@ table {
    Layout
    ========================================================================== */
 .site {
-  width: 900px;
-  margin: 0 auto; }
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px; }
 
 .content-area {
   width: 70%;
@@ -203,6 +204,15 @@ table {
   width: 25%;
   float: left; }
 
+@media all and (max-width: 800px) {
+  .content-area {
+    width: auto;
+    float: none; }
+
+  .widget-area {
+    margin-left: 0;
+    width: 100%;
+    float: none; } }
 /*
    Typography
    ========================================================================== */
@@ -301,6 +311,22 @@ h6 {
 .widget-area .info-shortdesc {
   border-bottom-color: white; }
 
+@media all and (max-width: 800px) {
+  .info-name {
+    font-size: 50px;
+    margin-left: 0; }
+
+  .info-shortdesc {
+    font-size: 16px; } }
+@media all and (max-width: 520px) {
+  .info-name {
+    font-size: 36px; } }
+@media all and (max-width: 360px) {
+  .info-name {
+    font-size: 30px; }
+
+  .info-shortdesc {
+    font-size: 17px; } }
 /*
    Content
    ========================================================================== */
@@ -343,6 +369,17 @@ h6 {
   .date,
   .location {
     color: black; } }
+@media all and (max-width: 520px) {
+  .site-content h2 {
+    font-size: 24px; }
+
+  .site-content .article {
+    padding-left: 0; }
+
+  .date {
+    border: 0 none;
+    float: none;
+    margin-bottom: 0; } }
 /*
    Widget
    ========================================================================== */
@@ -352,8 +389,15 @@ h6 {
 .widget-contact h2 {
   border: 0 none; }
 .widget-contact ul {
-  list-style-type: none; }
+  list-style-type: none;
+  padding: 0; }
 
+@media all and (max-width: 800px) {
+  .widget {
+    text-align: center; }
+
+  .widget-contact ul > li {
+    padding-bottom: 15px; } }
 /*
    FollowMeBar
    ========================================================================== */
@@ -374,6 +418,9 @@ h6 {
 .followMeBar.fixed.absolute {
   position: absolute; }
 
+@media all and (max-width: 800px) {
+  .followMeBar.fixed {
+    width: 550px; } }
 /**
  * Back to top button
  *
@@ -408,6 +455,12 @@ a.backtotop {
 .widget-contact.affix {
   width: 225px; }
 
+@media all and (max-width: 800px) {
+  .affix {
+    position: static; }
+
+  .widget-contact.affix {
+    width: auto; } }
 .btn {
   display: inline-block;
   padding: 6px 12px;
@@ -806,6 +859,11 @@ input[type="button"].btn-block {
   border-bottom: 4px solid white;
   width: 100%; }
 
+@media all and (max-width: 800px) {
+  .btn-download > a.btn {
+    text-align: center;
+    margin-top: 0;
+    padding: 10px 0; } }
 @media print {
   .btn-download > a {
     visibility: hidden; } }

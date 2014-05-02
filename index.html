@@ -7,7 +7,8 @@
   <meta charset='utf-8'>
   <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
   <meta content='' name='description'>
-  <meta content='width=1024, maximum-scale=1.0' name='viewport'>
+  <!-- %meta{:content => "width=1024, maximum-scale=1.0", :name => "viewport"} -->
+  <meta content='width=device-width, maximum-scale=1.0' name='viewport'>
   <title>Resume</title>
   <link href="assets/img/ico/favicon.ico" rel="icon" type="image/ico" />
   <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
@@ -244,7 +245,7 @@
         </div>
       </div>
       <div class='widget-area'>
-        <div class='widget widget-contact' data-spy='affix'>
+        <div class='widget widget-contact'>
           <div class='btn-group-vertical btn-download'>
             <a class='btn btn-default' href='/resume.pdf' role='button' target='_blank'>
               Download PDF              <i class="fa fa-print"></i>            </a>
@@ -274,25 +275,35 @@
   <script>
     window.jQuery || document.write('<script src="assets/js/jquery-1.8.3.min.js"><\/script>')
   </script>
+  <script src="assets/js/detectmobilebrowser.js" type="text/javascript"></script>
   <script src="assets/js/followMeBar.js" type="text/javascript"></script>
   <script src="assets/js/bootstrap/affix.js" type="text/javascript"></script>
   <script>
     $( document ).ready(function() {
-      // Back to top button
-      $(window).scroll(function(){
-        if ($(this).scrollTop() > 400) $('#backtotop').fadeIn()
-        else $('#backtotop').fadeOut()
-      })
-      $('#backtotop').click(function(){
-        $("html, body").animate({ scrollTop: 0 }, 600)
-        return false;
-      })
+      if(jQuery.browser.mobile) {
     
-      // Affix
-      $('.widget-contact').affix({
-        offset: {
-          top: 0
-        }
-      })
+        // Disable affix
+        $(window).off('.affix')
+        $('.widget-contact').removeData('affix').removeClass('affix affix-top affix-bottom')
+    
+      } else {
+        // Back to top button
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 400) $('#backtotop').fadeIn()
+          else $('#backtotop').fadeOut()
+        })
+        $('#backtotop').click(function(){
+          $("html, body").animate({ scrollTop: 0 }, 600)
+          return false;
+        })
+    
+        // Affix
+        $('.widget-contact').affix({
+          offset: {
+            top: 0
+          }
+        })
+      }
+    
     });
   </script></body></html>

@@ -29,10 +29,14 @@ function stickyTitles(stickies) {
 }
 
 jQuery(document).ready(function(){
-    var newStickies = new stickyTitles(jQuery(".followMeBar"));
-    newStickies.load();
-    jQuery(window).on("scroll", function() {
-        newStickies.scroll();
-    });
+    if(jQuery.browser.mobile) {
+        // do nothing
+    } else {
+        var newStickies = new stickyTitles(jQuery(".followMeBar"));
+        newStickies.load();
+        jQuery(window).on("scroll", function() {
+            newStickies.scroll();
+        });
+    }
 });
 
