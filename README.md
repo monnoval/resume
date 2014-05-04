@@ -29,7 +29,7 @@ View my resume here:
 - Have a simpler one column theme
 - Support for [h-resume microformat](http://microformats.org/wiki/h-resume)
 - Support for old browsers (IE7, IE8)
-- Social icons for twitter, linkedin, github, emaillayout
+- Social icons for twitter, linkedin, github, email
 - Step by step guide using [bootstro.js](http://clu3.github.io/bootstro.js) or [trip.js](http://eragonj.github.io/Trip.js/) or [intro.js](http://usablica.github.io/intro.js)
 - Landing intro before they looking at the resume. Hmmm this needs some thinking
 
