@@ -195,8 +195,8 @@ Source at Github (http://github.com/monnoval/resume)
 
 ------------------------------------------------------
 
-blog: [monnoval.com](http://monnoval.com)
-email: <mon@monnoval.com>
-twitter: [@monnoval](http://twitter.com/monnoval)
-github: [github.com/monnoval](https://github.com/monnoval)
-linkedin: [linkedin.com/in/monnoval](http://www.linkedin.com/in/monnoval)
+blog: monnoval.com
+email: mon@monnoval.com
+twitter: monnoval
+github: monnoval
+linkedin: monnoval

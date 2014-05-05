@@ -197,12 +197,12 @@ table {
 .content-area {
   width: 70%;
   float: left;
-  margin-bottom: 6em; }
+  margin-bottom: 3em; }
 
 .widget-area {
   margin-left: 5%;
   width: 25%;
-  float: left; }
+  float: right; }
 
 @media all and (max-width: 800px) {
   .content-area {
@@ -213,6 +213,19 @@ table {
     margin-left: 0;
     width: 100%;
     float: none; } }
+@media print {
+  .site {
+    width: 900px; }
+
+  .content-area {
+    width: 70%;
+    float: left;
+    margin-bottom: 3em; }
+
+  .widget-area {
+    margin-left: 5%;
+    width: 25%;
+    float: right; } }
 /*
    Typography
    ========================================================================== */
@@ -252,6 +265,9 @@ a {
   a:hover, a:focus {
     color: #555555;
     text-decoration: underline; }
+
+.print {
+  display: none; }
 
 /*
    Headings
@@ -327,6 +343,19 @@ h6 {
 
   .info-shortdesc {
     font-size: 17px; } }
+@media print {
+  .info-name {
+    font-size: 56px;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 0;
+    margin-left: -4px; }
+
+  .info-shortdesc {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 4px solid #eeeeee; } }
 /*
    Content
    ========================================================================== */
@@ -364,22 +393,22 @@ h6 {
 .desc {
   clear: both; }
 
-@media print {
-  .site-content h2,
-  .date,
-  .location {
-    color: black; } }
+@media all and (max-width: 800px) {
+  .site-content .article {
+    padding-left: 0; } }
 @media all and (max-width: 520px) {
   .site-content h2 {
     font-size: 24px; }
-
-  .site-content .article {
-    padding-left: 0; }
 
   .date {
     border: 0 none;
     float: none;
     margin-bottom: 0; } }
+@media print {
+  .site-content h2,
+  .date,
+  .location {
+    color: black; } }
 /*
    Widget
    ========================================================================== */
@@ -392,12 +421,60 @@ h6 {
   list-style-type: none;
   padding: 0; }
 
+.contact-icons {
+  margin-bottom: 3em; }
+  .contact-icons a {
+    font-size: 42px;
+    margin-right: -10px;
+    line-height: 1.33; }
+
+@media all and (max-width: 900px) {
+  .contact-icons a {
+    margin-right: 0; } }
 @media all and (max-width: 800px) {
   .widget {
     text-align: center; }
 
   .widget-contact ul > li {
-    padding-bottom: 15px; } }
+    padding-bottom: 15px; }
+
+  .widget-contact h2 {
+    display: none; }
+
+  .contact-icons li {
+    display: inline; }
+
+  .contact-icons a {
+    font-size: 56px;
+    padding: 10px; } }
+@media all and (max-width: 520px) {
+  .contact-icons {
+    margin-right: -20px;
+    margin-left: -20px; }
+
+  .contact-icons a {
+    font-size: 49px;
+    padding: 0; } }
+@media all and (max-width: 360px) {
+  .contact-icons a {
+    font-size: 39px;
+    padding: 0; } }
+@media print {
+  .widget {
+    text-align: right; }
+
+  .contact-icons {
+    margin: 0; }
+    .contact-icons li {
+      margin: 0 0 10px 0;
+      display: block; }
+    .contact-icons a {
+      margin-right: 0;
+      padding: 0; }
+    .contact-icons a > span.print {
+      display: block;
+      font-size: 14px;
+      margin-right: 10px; } }
 /*
    FollowMeBar
    ========================================================================== */
@@ -418,9 +495,12 @@ h6 {
 .followMeBar.fixed.absolute {
   position: absolute; }
 
+@media all and (max-width: 900px) {
+  .followMeBar.fixed {
+    width: 70%; } }
 @media all and (max-width: 800px) {
   .followMeBar.fixed {
-    width: 550px; } }
+    width: 90%; } }
 /**
  * Back to top button
  *
@@ -455,6 +535,9 @@ a.backtotop {
 .widget-contact.affix {
   width: 225px; }
 
+@media all and (max-width: 900px) {
+  .affix {
+    right: 20px; } }
 @media all and (max-width: 800px) {
   .affix {
     position: static; }
@@ -859,11 +942,16 @@ input[type="button"].btn-block {
   border-bottom: 4px solid white;
   width: 100%; }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 900px) {
   .btn-download > a.btn {
-    text-align: center;
-    margin-top: 0;
-    padding: 10px 0; } }
+    margin-right: 0; } }
+@media all and (max-width: 800px) {
+  .btn-download {
+    margin-bottom: 3em; }
+    .btn-download > a.btn {
+      text-align: center;
+      margin-top: 0;
+      padding: 10px 0; } }
 @media print {
   .btn-download > a {
     visibility: hidden; } }
