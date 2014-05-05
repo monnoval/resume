@@ -37,7 +37,6 @@
 	}
 }
 
-
 @media all and (max-width: 520px) {
 	.info-name {
 		font-size: floor($font-size-base * 2.60);
@@ -53,4 +52,20 @@
 	}
 }
 
+@media print {
+	.info-name {
+		font-size: floor($font-size-base * 4); // ~56px
+		font-weight: bold;
+		line-height: $line-height-larger;
+		margin-bottom: 0;
+		margin-left: -4px;
+	}
+
+	.info-shortdesc {
+		font-size: ceil($font-size-base * 1.25); // ~18px
+		font-weight: bold;
+		padding-bottom: 10px;
+		border-bottom: 4px solid $gray-lighter;
+	}
+}
 

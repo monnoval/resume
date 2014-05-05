@@ -17,7 +17,7 @@
 .widget-area {
 	margin-left: $site-widget-margin;
 	width: $site-widget-width;
-	float: left;
+	float: right;
 }
 
 @media all and (max-width: 800px) {
@@ -33,4 +33,21 @@
 		float: none;
 	}
 
+}
+
+@media print {
+	.site {
+		width: $site-width;
+	}
+	.content-area {
+		width: $site-content-width;
+		float: left;
+		margin-bottom: 3em;
+	}
+
+	.widget-area {
+		margin-left: $site-widget-margin;
+		width: $site-widget-width;
+		float: right;
+	}
 }

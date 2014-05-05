@@ -57,7 +57,6 @@
 
 }
 
-
 @media all and (max-width: 520px) {
 	.contact-icons {
 		margin-right: -20px;
@@ -76,4 +75,28 @@
 	}
 }
 
+@media print {
+	.widget {
+		text-align: right;
+
+	}
+	.contact-icons  {
+		margin: 0;
+		li {
+			margin: 0 0 10px 0;
+			display: block;
+		}
+
+		a {
+			margin-right: 0;
+			padding: 0;
+		}
+
+		a > span.print {
+			display: block;
+			font-size: $font-size-base;
+			margin-right: 10px;
+		}
+	}
+}
 

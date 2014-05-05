@@ -55,14 +55,23 @@
               - data.resume.contact.each do |contact|
                 %li
                   - if    contact.name == 'blog'
-                    = link_to '<i class="icon-globe-outline"></i>', "http://#{contact.link}", :target => 'blank'
+                    - full_link = "http://#{contact.link}"
+                    - full_name = "<span class='print'>#{contact.link}</span>"
+                    = link_to '<i class="icon-globe-outline"></i>'+full_name, full_link, :target => 'blank'
                   - elsif contact.name == 'email'
-                    = mail_to "#{contact.link}", '<i class="icon-at"></i>'
+                    - full_name = "<span class='print'>#{contact.link}</span>"
+                    = mail_to "#{contact.link}", '<i class="icon-at"></i>'+full_name
                   - elsif contact.name == 'twitter'
-                    = link_to '<i class="icon-twitter-circled"></i>', "http://twitter.com/#{contact.link}", :target => 'blank'
+                    - full_link = "http://twitter.com/#{contact.link}"
+                    - full_name = "<span class='print'>@#{contact.link}</span>"
+                    = link_to '<i class="icon-twitter-circled"></i>'+full_name, full_link, :target => 'blank'
                   - elsif contact.name == 'github'
-                    = link_to '<i class="icon-github-circled"></i>', "https://github.com/#{contact.link}", :target => 'blank'
+                    - full_link = "https://github.com/#{contact.link}"
+                    - full_name = "<span class='print'>github.com/#{contact.link}</span>"
+                    = link_to '<i class="icon-github-circled"></i>'+full_name, full_link, :target => 'blank'
                   - elsif contact.name == 'linkedin'
-                    = link_to '<i class="icon-linkedin-circled"></i>', "http://www.linkedin.com/in/#{contact.link}", :target => 'blank'
+                    - full_link = "http://www.linkedin.com/in/#{contact.link}"
+                    - full_name = "<span class='print'>linkedin.com/in/#{contact.link}</span>"
+                    = link_to '<i class="icon-linkedin-circled"></i>'+full_name, full_link, :target => 'blank'
     = link_to '', '#', :id => "backtotop", :class => "backtotop"
     = partial "layouts/jquery"

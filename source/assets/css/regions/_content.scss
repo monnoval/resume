@@ -48,14 +48,6 @@
 	clear: both;
 }
 
-@media print {
-	.site-content h2,
-	.date,
-	.location {
-		color: $black;
-	}
-}
-
 @media all and (max-width: 800px) {
 	.site-content .article {
 		padding-left: 0;
@@ -74,7 +66,11 @@
 	}
 }
 
-
-
-
+@media print {
+	.site-content h2,
+	.date,
+	.location {
+		color: $black;
+	}
+}
 
