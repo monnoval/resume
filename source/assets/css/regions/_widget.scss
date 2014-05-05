@@ -16,14 +16,60 @@
 	}
 }
 
+.contact-icons {
+	margin-bottom: 3em;
+
+	a {
+		font-size: floor($font-size-base * 3.00); // ~36px
+		margin-right: -10px;
+		line-height: $line-height-large;
+	}
+}
+
+@media all and (max-width: 900px) {
+	.contact-icons a {
+		margin-right: 0;
+	}
+}
+
+
 @media all and (max-width: 800px) {
 	.widget {
 		text-align: center;
 
 	}
-
 	.widget-contact ul > li {
 		padding-bottom: 15px
 	}
+
+	.widget-contact h2 {
+		display: none
+	}
+
+	.contact-icons li {
+		display: inline;
+	}
+
+	.contact-icons a {
+		font-size: floor($font-size-base * 4.00); // ~36px
+		padding: 10px;
+	}
+
 }
+
+
+@media all and (max-width: 520px) {
+	.contact-icons a {
+		font-size: floor($font-size-base * 3.50); // ~36px
+		padding: 0;
+	}
+}
+
+@media all and (max-width: 360px) {
+	.contact-icons a {
+		font-size: floor($font-size-base * 3.00); // ~36px
+		padding: 0;
+	}
+}
+
 

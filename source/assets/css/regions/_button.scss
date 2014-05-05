@@ -35,11 +35,21 @@
 	width: 100%;
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 900px) {
 	.btn-download > a.btn {
-		text-align: center;
-		margin-top: 0;
-		padding: 10px 0;
+		margin-right: 0;
+	}
+}
+
+@media all and (max-width: 800px) {
+	.btn-download {
+		margin-bottom: 3em;
+
+		> a.btn {
+			text-align: center;
+			margin-top: 0;
+			padding: 10px 0;
+		}
 	}
 }
 

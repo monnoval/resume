@@ -51,9 +51,18 @@
                   = download.title
                   <i class="fa fa-#{download.icon}"></i>
             %h2 &nbsp;
-            %ul
+            %ul.contact-icons
               - data.resume.contact.each do |contact|
                 %li
-                  = markdown_unwrap_p(contact.link)
+                  - if    contact.name == 'blog'
+                    = link_to '<i class="icon-globe-outline"></i>', "http://#{contact.link}", :target => 'blank'
+                  - elsif contact.name == 'email'
+                    = mail_to "#{contact.link}", '<i class="icon-at"></i>'
+                  - elsif contact.name == 'twitter'
+                    = link_to '<i class="icon-twitter-circled"></i>', "http://twitter.com/#{contact.link}", :target => 'blank'
+                  - elsif contact.name == 'github'
+                    = link_to '<i class="icon-github-circled"></i>', "https://github.com/#{contact.link}", :target => 'blank'
+                  - elsif contact.name == 'linkedin'
+                    = link_to '<i class="icon-linkedin-circled"></i>', "http://www.linkedin.com/in/#{contact.link}", :target => 'blank'
     = link_to '', '#', :id => "backtotop", :class => "backtotop"
     = partial "layouts/jquery"

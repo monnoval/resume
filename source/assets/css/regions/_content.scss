@@ -56,12 +56,15 @@
 	}
 }
 
+@media all and (max-width: 800px) {
+	.site-content .article {
+		padding-left: 0;
+	}
+}
+
 @media all and (max-width: 520px) {
 	.site-content h2 {
 		font-size: ceil($font-size-base * 1.70);
-	}
-	.site-content .article {
-		padding-left: 0;
 	}
 
 	.date {

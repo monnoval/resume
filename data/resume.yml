@@ -18,15 +18,15 @@ info:
 
 contact:
     - name: blog
-      link: '[monnoval.com](http://monnoval.com)'
+      link: 'monnoval.com'
     - name: email
-      link: '<mon@monnoval.com>'
+      link: 'mon@monnoval.com'
     - name: twitter
-      link: '[@monnoval](http://twitter.com/monnoval)'
+      link: 'monnoval'
     - name: github
-      link: '[github.com/monnoval](https://github.com/monnoval)'
+      link: 'monnoval'
     - name: linkedin
-      link: '[linkedin.com/in/monnoval](http://www.linkedin.com/in/monnoval)'
+      link: 'monnoval'
 
 download:
     - title: Download PDF
