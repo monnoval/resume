@@ -12,7 +12,6 @@ __Back-end developers__ loves designers who code. Being in the front-end pool cr
 __My bonus points:__
 
 - Blurred the lines between front-end and back-end development
-- Blurred the lines between front-end and back-end development
 - Not afraid of cross browser nuances
 - Ensures maintainable and modular code
 - Loves the command line
