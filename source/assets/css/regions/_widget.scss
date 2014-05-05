@@ -82,14 +82,13 @@
 	}
 	.contact-icons  {
 		margin: 0;
-		li {
-			margin: 0 0 10px 0;
-			display: block;
-		}
-
 		a {
 			margin-right: 0;
 			padding: 0;
+		}
+
+		a > i {
+			display: none
 		}
 
 		a > span.print {
