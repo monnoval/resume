@@ -59,6 +59,10 @@
 
 
 @media all and (max-width: 520px) {
+	.contact-icons {
+		margin-right: -20px;
+		margin-left: -20px;
+	}
 	.contact-icons a {
 		font-size: floor($font-size-base * 3.50); // ~36px
 		padding: 0;
@@ -67,7 +71,7 @@
 
 @media all and (max-width: 360px) {
 	.contact-icons a {
-		font-size: floor($font-size-base * 3.00); // ~36px
+		font-size: floor($font-size-base * 2.80); // ~36px
 		padding: 0;
 	}
 }
