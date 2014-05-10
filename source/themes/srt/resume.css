@@ -5,8 +5,10 @@
 
     v0.9: 5/28/09
 
-    design and code by: thingsthatarebrown.com 
+    design and code by: thingsthatarebrown.com
                         (matt brown)
+    modified by: monnoval.com
+
 ---------------------------------------------------------------------------------
 */
 
@@ -31,11 +33,12 @@ body { font-family: Georgia; color: #444; }
 #ft p { margin-bottom: 0; text-align: center;   }
 
 /* //-- core typography and style -- */
-#hd h1 { font-size: 48px; text-transform: uppercase; letter-spacing: 3px; }
+#hd h1 { font-size: 40px; text-transform: uppercase; letter-spacing: 3px; }
 h2 { font-size: 152% }
 h3, h4 { font-size: 122%; }
 h1, h2, h3, h4 { color: #333; }
 p { font-size: 100%; line-height: 18px; padding-right: 3em; }
+p, ul, ol { margin-bottom: 0.8em; }
 a { color: #990003 }
 a:hover { text-decoration: none; }
 strong { font-weight: bold; }
@@ -54,9 +57,10 @@ a#pdf:hover { background: #222; }
 
 .job { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc; }
 .job h4 { position: absolute; top: 0.35em; right: 0 }
-.job p { margin: 0.75em 0 3em 0; }
-
+.job h3 {margin-bottom: 0.8em}
+.job:last-child,
 .last { border: none; }
+
 .skills-list {  }
 .skills-list ul { margin: 0; }
 .skills-list li { margin: 3px 0; padding: 3px 0; }
@@ -70,5 +74,6 @@ a#pdf:hover { background: #222; }
 /* --// override to force 1/8th width grids -- */
 .yui-gf .yui-u{width:80.2%;}
 .yui-gf div.first{width:12.3%;}
-
+.yui-u ul > li:last-child,
+.yui-gf:last-child {border: none; margin-bottom: 0; padding-bottom: 0;}
 
