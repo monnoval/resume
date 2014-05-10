@@ -1,0 +1,6 @@
+default:
+  css_dir: themes/default/css
+  css: themes/default/css
+
+srt:
+  css_dir: 'themes/srt/css'

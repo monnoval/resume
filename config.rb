@@ -20,6 +20,7 @@ end
 #
 # With no layout
 # page "/path/to/file.html", :layout => false
+page "index.html", :layout => false
 #
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
@@ -57,12 +58,6 @@ helpers do
 #     "Helping"
 #   end
 end
-
-set :css_dir, 'assets/css'
-
-set :js_dir, 'assets/js'
-
-set :images_dir, 'assets/img'
 
 # Build-specific configuration
 configure :build do

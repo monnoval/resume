@@ -1,9 +1,7 @@
-
-@import "dependencies/bootstrap/variables";
-@import "dependencies/bootstrap/mixins";
-@import "dependencies/bootstrap/buttons";
-@import "dependencies/bootstrap/button-groups";
-
+@import "../dependencies/bootstrap/variables";
+@import "../dependencies/bootstrap/mixins";
+@import "../dependencies/bootstrap/buttons";
+@import "../dependencies/bootstrap/button-groups";
 
 .btn-group-vertical > .btn {
 	border-radius: 0 !important;
