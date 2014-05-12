@@ -1,0 +1,53 @@
+/*
+   Layout
+   ========================================================================== */
+
+.site {
+	max-width: $site-width;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.content-area {
+	width: $site-content-width;
+	float: left;
+	margin-bottom: 3em;
+}
+
+.widget-area {
+	margin-left: $site-widget-margin;
+	width: $site-widget-width;
+	float: right;
+}
+
+@media all and (max-width: 800px) {
+
+	.content-area {
+		width: auto;
+		float: none;
+	}
+
+	.widget-area {
+		margin-left: 0;
+		width: 100%;
+		float: none;
+	}
+
+}
+
+@media print {
+	.site {
+		width: $site-width;
+	}
+	.content-area {
+		width: $site-content-width;
+		float: left;
+		margin-bottom: 3em;
+	}
+
+	.widget-area {
+		margin-left: $site-widget-margin;
+		width: $site-widget-width;
+		float: right;
+	}
+}

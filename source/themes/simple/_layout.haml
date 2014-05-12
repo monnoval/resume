@@ -1,0 +1,77 @@
+!!!
+/[if lt IE 7] <html class='no-js lt-ie9 lt-ie8 lt-ie7' lang='en'>
+/[if IE 7] <html class='no-js lt-ie9 lt-ie8' lang='en'>
+/[if IE 8] <html class='no-js lt-ie9' lang='en'>
+<!--[if gt IE 8]><!-->
+%html{:class => 'no-js', :lang => 'en'}<>
+  <!--<![endif]-->
+  = partial "themes/simple/head"
+  %body{:class => "#{page_classes}" }
+    = partial "themes/default/chromeframe"
+    .site.hfeed
+      %header.site-header
+      .site-content
+        .content-area
+          .site-main
+            %h1.info-name= data.resume.info.name
+            .info-shortdesc.lowercase= data.resume.info.shortdesc
+            .section
+              %h2.followMeBar Summary
+              .article
+                %p
+                = markdown(data.resume.info.desc)
+            .section
+              %h2.followMeBar Experience
+              - data.resume.work.each do |work|
+                .work.article
+                  %h3.work-title=     work.title
+                  %h4.work-employer=  work.employer
+                  %p.work-dates.date= work.dates
+                  %p.work-location.location=  work.location
+                  .work-desc.desc=    markdown(work.description)
+            .section
+              %h2.followMeBar Speaking Engagements
+              - data.resume.event.each do |event|
+                .work.article
+                  %h3.event-name=     event.name
+                  %p.event-date.date= event.date
+                  %p.event-location.location= event.location
+                  .event-desc.desc=   markdown(event.description)
+            .section
+              %h2.followMeBar Education
+              - data.resume.education.each do |school|
+                .work.article
+                  %h3.event-name=    school.name
+                  .event-desc.desc=  markdown(school.description)
+        .widget-area
+          .widget.widget-contact
+            .btn-group-vertical.btn-download
+              - data.resume.download.each do |download|
+                %a.btn.btn-default{:href => "#{download.link}", :target => "_blank", :role => 'button'}
+                  = download.title
+                  <i class="fa fa-#{download.icon}"></i>
+            %h2 &nbsp;
+            %ul.contact-icons
+              - data.resume.contact.each do |contact|
+                %li
+                  - if    contact.name == 'blog'
+                    - full_link = "http://#{contact.link}"
+                    - full_name = "<span class=''>#{contact.link}</span>"
+                    = link_to full_name, full_link, :target => 'blank'
+                  - elsif contact.name == 'email'
+                    - full_name = "<span class=''>#{contact.link}</span>"
+                    = mail_to "#{contact.link}", full_name
+                  - elsif contact.name == 'twitter'
+                    - full_link = "http://twitter.com/#{contact.link}"
+                    - full_name = "<span class=''>@#{contact.link}</span>"
+                    = link_to full_name, full_link, :target => 'blank'
+                  - elsif contact.name == 'github'
+                    - full_link = "https://github.com/#{contact.link}"
+                    - full_name = "<span class=''>github.com/#{contact.link}</span>"
+                    = link_to full_name, full_link, :target => 'blank'
+                  - elsif contact.name == 'linkedin'
+                    - full_link = "http://www.linkedin.com/in/#{contact.link}"
+                    - full_name = "<span class=''>linkedin.com/in/#{contact.link}</span>"
+                    = link_to full_name, full_link, :target => 'blank'
+    = link_to '', '#', :id => "backtotop", :class => "backtotop"
+    = partial "themes/simple/jquery"
