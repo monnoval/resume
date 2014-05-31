@@ -29,12 +29,15 @@ contact:
       link: 'monnoval'
 
 download:
-    - name: pdf
-      link: '/resume.pdf'
-    - name: text
-      link: '/index.txt'
-    - name: source
-      link: 'http://github.com/monnoval/resume'
+    - name:  pdf
+      title: Download PDF
+      link:  '/resume.pdf'
+    - name:  text
+      title: Download Text
+      link:  '/index.txt'
+    - name:  source
+      title: Source at Github
+      link:  'http://github.com/monnoval/resume'
 
 work:
 

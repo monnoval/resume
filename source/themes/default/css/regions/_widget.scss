@@ -17,41 +17,34 @@
 }
 
 .download-icons {
-  margin-bottom: 3em;
   float: right;
+  margin: 0.4em 0 0;
 
   > li {
     display: block;
     text-align: center;
   }
 
-  > li:first-child a {
-    border-radius: 25px 25px 0 0;
-    padding-top: 15px;
-  }
-  > li:last-child a {
-    border-radius: 0 0 25px 25px ;
-    padding-bottom: 20px;
-  }
-
   a {
-    font-size: floor($font-size-base * 1.45);
+    border-radius: 25px;
+    font-size: floor($font-size-base * 1.7);
     line-height: $line-height-large;
-    background-color: $gray-light;
     transition: background-color 0.25s ease-out;
-    color: $white;
+    color: $gray-dark;
     width: 50px;
     height: 25px;
-    padding: 12.5px 0;
+    padding: 10px 0 15px;
     display: block;
+    margin-bottom: 0.4em;
 
     &:hover {
-      background-color: $gray-dark;
+      background-color: $gray-lighter;
     }
   }
 }
 
 .contact-icons {
+  clear: both;
   margin-bottom: 3em;
   float: right;
 
@@ -63,7 +56,8 @@
   a {
     font-size: floor($font-size-base * 1.25);
     line-height: $line-height-large;
-    background-color: $gray-light;
+    // background-color: $gray-light;
+    background-color: #ccc;
     transition: background-color 0.25s ease-out;
     color: $white;
     width: 50px;
@@ -74,7 +68,7 @@
     margin-bottom: 0.6em;
 
     &:hover {
-      background-color: $gray-dark;
+      background-color: $gray;
     }
   }
 }

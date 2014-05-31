@@ -48,7 +48,6 @@
             %ul.download-icons
               - data.resume.download.each do |download|
                 = partial "themes/default/download", :locals => {:download => download}
-            %h2.clearfix &nbsp;
             %ul.contact-icons
               - data.resume.contact.each do |contact|
                 = partial "themes/default/contact", :locals => {:contact => contact}
