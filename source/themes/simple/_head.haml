@@ -6,13 +6,13 @@
 
   %title= current_page.data.title || data.site.base.title
 
-  %link{:rel => "ico",        :href => "themes/default/img/ico/favicon.ico", :type => "image/ico"}/
-  %link{:rel => "stylesheet", :href => "themes/default/css/style.css", :media => "all", :type => "text/css"}/
-  %link{:rel => "stylesheet", :href => "themes/default/css/fonts.css", :media => "all", :type => "text/css"}/
+  %link{:rel => "ico",        :href => "themes/simple/img/ico/favicon.ico", :type => "image/ico"}/
+  %link{:rel => "stylesheet", :href => "themes/simple/css/style.css", :media => "all", :type => "text/css"}/
+  %link{:rel => "stylesheet", :href => "themes/simple/css/fonts.css", :media => "all", :type => "text/css"}/
 
   - if content_for?(:style)
     = yield_content :style
 
   /[if lt IE 9]
-    %script{:src => "themes/default/js/html5shiv.js", :type => ""}
+    %script{:src => "themes/simple/js/html5shiv.js", :type => ""}
 

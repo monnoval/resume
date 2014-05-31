@@ -3,51 +3,26 @@
    ========================================================================== */
 
 .site {
-	max-width: $site-width;
-	margin: 0 auto;
-	padding: 0 20px;
+  max-width: $site-width;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .content-area {
-	width: $site-content-width;
-	float: left;
-	margin-bottom: 3em;
-}
-
-.widget-area {
-	margin-left: $site-widget-margin;
-	width: $site-widget-width;
-	float: right;
+  margin-bottom: 3em;
 }
 
 @media all and (max-width: 800px) {
-
-	.content-area {
-		width: auto;
-		float: none;
-	}
-
-	.widget-area {
-		margin-left: 0;
-		width: 100%;
-		float: none;
-	}
-
+  .content-area {
+    width: auto;
+  }
 }
 
 @media print {
-	.site {
-		width: $site-width;
-	}
-	.content-area {
-		width: $site-content-width;
-		float: left;
-		margin-bottom: 3em;
-	}
-
-	.widget-area {
-		margin-left: $site-widget-margin;
-		width: $site-widget-width;
-		float: right;
-	}
+  .site {
+    width: $site-width;
+  }
+  .content-area {
+    margin-bottom: 3em;
+  }
 }

@@ -7,7 +7,7 @@
   <!--<![endif]-->
   = partial "themes/simple/head"
   %body{:class => "#{page_classes}" }
-    = partial "themes/default/chromeframe"
+    = partial "themes/simple/chromeframe"
     .site.hfeed
       %header.site-header
       .site-content
@@ -47,9 +47,9 @@
           .widget.widget-contact
             %ul.download-icons
               - data.resume.download.each do |download|
-                = partial "themes/default/download", :locals => {:download => download}
+                = partial "themes/simple/download", :locals => {:download => download}
             %ul.contact-icons
               - data.resume.contact.each do |contact|
-                = partial "themes/default/contact", :locals => {:contact => contact}
+                = partial "themes/simple/contact", :locals => {:contact => contact}
     = link_to '', '#', :id => "backtotop", :class => "backtotop"
     = partial "themes/simple/jquery"
