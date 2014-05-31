@@ -1,0 +1,15 @@
+- icon_pdf    = 'fa fa-home'
+- icon_text   = 'fa fa-paper-plane'
+- icon_source = 'fa fa-github-alt'
+- icon  = ''
+
+- if download.name == 'pdf'
+  - icon = 'fa fa-file-pdf-o'
+- elsif download.name == 'text'
+  - icon = 'fa fa-file-text-o'
+- elsif download.name == 'source'
+  - icon = 'fa fa-file-code-o'
+
+%li<
+  %a{:href => "#{download.link}", :target => "blank"}<
+    %i.fa{:class => "#{icon}"}

@@ -1,0 +1,49 @@
+
+- icon_blog     = 'fa fa-home'
+- icon_email    = 'fa fa-paper-plane'
+- icon_github   = 'fa fa-github-alt'
+- icon_linkedin = 'fa fa-linkedin'
+- icon_twitter  = 'fa fa-twitter'
+- icon  = ''
+
+- link_blog     = 'http://'
+- link_email    = 'mailto:'
+- link_github   = 'https://github.com/'
+- link_linkedin = 'http://www.linkedin.com/in/'
+- link_twitter  = 'http://twitter.com/'
+- link  = ''
+
+- print_blog     = ''
+- print_email    = ''
+- print_github   = 'github.com/'
+- print_linkedin = 'linkedin.com/in/'
+- print_twitter  = '@'
+- print = ''
+
+
+%li<
+  - if contact.name == 'blog'
+    - print = print_blog
+    - icon  =  icon_blog
+    - link  =  link_blog
+  - elsif contact.name == 'email'
+    - print = print_email
+    - icon  =  icon_email
+    - link  =  link_email
+  - elsif contact.name == 'twitter'
+    - print = print_twitter
+    - icon  =  icon_twitter
+    - link  =  link_twitter
+  - elsif contact.name == 'github'
+    - print = print_github
+    - icon  =  icon_github
+    - link  =  link_github
+  - elsif contact.name == 'linkedin'
+    - print = print_linkedin
+    - icon  =  icon_linkedin
+    - link  =  link_linkedin
+  = partial "themes/default/contact-link",
+    :locals => {:contact => contact,
+    :print  => print,
+    :icon   => icon,
+    :link   => link}

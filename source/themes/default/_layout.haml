@@ -3,7 +3,7 @@
 /[if IE 7] <html class='no-js lt-ie9 lt-ie8' lang='en'>
 /[if IE 8] <html class='no-js lt-ie9' lang='en'>
 <!--[if gt IE 8]><!-->
-%html{:class => 'no-js', :lang => 'en'}<>
+%html{:class => 'no-js', :lang => 'en'}
   <!--<![endif]-->
   = partial "themes/default/head"
   %body{:class => "#{page_classes}" }
@@ -45,33 +45,12 @@
                   .event-desc.desc=  markdown(school.description)
         .widget-area
           .widget.widget-contact
-            .btn-group-vertical.btn-download
+            %ul.download-icons
               - data.resume.download.each do |download|
-                %a.btn.btn-default{:href => "#{download.link}", :target => "_blank", :role => 'button'}
-                  = download.title
-                  <i class="fa fa-#{download.icon}"></i>
-            %h2 &nbsp;
+                = partial "themes/default/download", :locals => {:download => download}
+            %h2.clearfix &nbsp;
             %ul.contact-icons
               - data.resume.contact.each do |contact|
-                %li
-                  - if    contact.name == 'blog'
-                    - full_link = "http://#{contact.link}"
-                    - full_name = "<span class='print'>#{contact.link}</span>"
-                    = link_to '<i class="icon-globe-outline"></i>'+full_name, full_link, :target => 'blank'
-                  - elsif contact.name == 'email'
-                    - full_name = "<span class='print'>#{contact.link}</span>"
-                    = mail_to "#{contact.link}", '<i class="icon-at"></i>'+full_name
-                  - elsif contact.name == 'twitter'
-                    - full_link = "http://twitter.com/#{contact.link}"
-                    - full_name = "<span class='print'>@#{contact.link}</span>"
-                    = link_to '<i class="icon-twitter-circled"></i>'+full_name, full_link, :target => 'blank'
-                  - elsif contact.name == 'github'
-                    - full_link = "https://github.com/#{contact.link}"
-                    - full_name = "<span class='print'>github.com/#{contact.link}</span>"
-                    = link_to '<i class="icon-github-circled"></i>'+full_name, full_link, :target => 'blank'
-                  - elsif contact.name == 'linkedin'
-                    - full_link = "http://www.linkedin.com/in/#{contact.link}"
-                    - full_name = "<span class='print'>linkedin.com/in/#{contact.link}</span>"
-                    = link_to '<i class="icon-linkedin-circled"></i>'+full_name, full_link, :target => 'blank'
+                = partial "themes/default/contact", :locals => {:contact => contact}
     = link_to '', '#', :id => "backtotop", :class => "backtotop"
     = partial "themes/default/jquery"

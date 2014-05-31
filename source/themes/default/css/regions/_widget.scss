@@ -3,33 +3,86 @@
    ========================================================================== */
 
 .widget {
-	text-align: right;
+  text-align: right;
 }
 
 .widget-contact {
-	h2 {
-		border: 0 none;
-	}
-	ul {
-		list-style-type: none;
-		padding: 0;
-	}
+  h2 {
+    border: 0 none;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+}
+
+.download-icons {
+  margin-bottom: 3em;
+  float: right;
+
+  > li {
+    display: block;
+    text-align: center;
+  }
+
+  > li:first-child a {
+    border-radius: 25px 25px 0 0;
+    padding-top: 15px;
+  }
+  > li:last-child a {
+    border-radius: 0 0 25px 25px ;
+    padding-bottom: 20px;
+  }
+
+  a {
+    font-size: floor($font-size-base * 1.45);
+    line-height: $line-height-large;
+    background-color: $gray-light;
+    transition: background-color 0.25s ease-out;
+    color: $white;
+    width: 50px;
+    height: 25px;
+    padding: 12.5px 0;
+    display: block;
+
+    &:hover {
+      background-color: $gray-dark;
+    }
+  }
 }
 
 .contact-icons {
-	margin-bottom: 3em;
+  margin-bottom: 3em;
+  float: right;
 
-	a {
-		font-size: floor($font-size-base * 3.00); // ~36px
-		margin-right: -10px;
-		line-height: $line-height-large;
-	}
+  > li {
+    display: block;
+    text-align: center;
+  }
+
+  a {
+    font-size: floor($font-size-base * 1.25);
+    line-height: $line-height-large;
+    background-color: $gray-light;
+    transition: background-color 0.25s ease-out;
+    color: $white;
+    width: 50px;
+    height: 25px;
+    padding: 12.5px 0;
+    border-radius: 25px;
+    display: block;
+    margin-bottom: 0.6em;
+
+    &:hover {
+      background-color: $gray-dark;
+    }
+  }
 }
 
 @media all and (max-width: 900px) {
-	.contact-icons a {
-		margin-right: 0;
-	}
+  .contact-icons a {
+    margin-right: 0;
+  }
 }
 
 
