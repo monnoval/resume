@@ -143,22 +143,33 @@
   .widget {
     text-align: right;
   }
+  .download-icons {
+    display: none;
+  }
   .contact-icons  {
-    margin: 0;
+    margin: 200px 0 0 0;
 
-    a {
-      margin-right: 0;
-      padding: 0;
+    > li {
+      text-align: right;
     }
 
-    a > i {
+    > li a {
+      margin: 0 0 10px;
+      padding: 0;
+      width: auto;
+      height: auto;
+      background: none;
+      display: block;
+    }
+
+    > li a i {
       display: none
     }
 
-    a > span.print {
+    > li a .print {
       display: block;
       font-size: $font-size-base;
-      margin-right: 10px;
+      font-weight: bold;
     }
   }
 }
