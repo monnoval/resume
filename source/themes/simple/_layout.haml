@@ -45,33 +45,11 @@
                   .event-desc.desc=  markdown(school.description)
         .widget-area
           .widget.widget-contact
-            .btn-group-vertical.btn-download
+            %ul.download-icons
               - data.resume.download.each do |download|
-                %a.btn.btn-default{:href => "#{download.link}", :target => "_blank", :role => 'button'}
-                  = download.title
-                  <i class="fa fa-#{download.icon}"></i>
-            %h2 &nbsp;
+                = partial "themes/default/download", :locals => {:download => download}
             %ul.contact-icons
               - data.resume.contact.each do |contact|
-                %li
-                  - if    contact.name == 'blog'
-                    - full_link = "http://#{contact.link}"
-                    - full_name = "<span class=''>#{contact.link}</span>"
-                    = link_to full_name, full_link, :target => 'blank'
-                  - elsif contact.name == 'email'
-                    - full_name = "<span class=''>#{contact.link}</span>"
-                    = mail_to "#{contact.link}", full_name
-                  - elsif contact.name == 'twitter'
-                    - full_link = "http://twitter.com/#{contact.link}"
-                    - full_name = "<span class=''>@#{contact.link}</span>"
-                    = link_to full_name, full_link, :target => 'blank'
-                  - elsif contact.name == 'github'
-                    - full_link = "https://github.com/#{contact.link}"
-                    - full_name = "<span class=''>github.com/#{contact.link}</span>"
-                    = link_to full_name, full_link, :target => 'blank'
-                  - elsif contact.name == 'linkedin'
-                    - full_link = "http://www.linkedin.com/in/#{contact.link}"
-                    - full_name = "<span class=''>linkedin.com/in/#{contact.link}</span>"
-                    = link_to full_name, full_link, :target => 'blank'
+                = partial "themes/default/contact", :locals => {:contact => contact}
     = link_to '', '#', :id => "backtotop", :class => "backtotop"
     = partial "themes/simple/jquery"

@@ -1,0 +1,4 @@
+- print       = "<span class='print'>#{print}#{contact.link}</span>"
+- name        = "<i class='#{icon}'></i>#{print}"
+- destination = "#{link}#{contact.link}"
+= link_to name, destination, :target => 'blank', :class => contact.name

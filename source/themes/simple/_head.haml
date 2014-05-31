@@ -6,8 +6,9 @@
 
   %title= current_page.data.title || data.site.base.title
 
-  %link{:rel => "ico",        :href => "/themes/default/img/ico/favicon.ico", :type => "image/ico"}/
-  %link{:rel => "stylesheet", :href => "/themes/default/css/style.css", :media => "all", :type => "text/css"}/
+  %link{:rel => "ico",        :href => "themes/default/img/ico/favicon.ico", :type => "image/ico"}/
+  %link{:rel => "stylesheet", :href => "themes/default/css/style.css", :media => "all", :type => "text/css"}/
+  %link{:rel => "stylesheet", :href => "themes/default/css/fonts.css", :media => "all", :type => "text/css"}/
 
   - if content_for?(:style)
     = yield_content :style
