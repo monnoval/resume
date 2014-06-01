@@ -15,6 +15,12 @@
           .site-main
             %h1.info-name= data.resume.info.name
             .info-shortdesc.lowercase= data.resume.info.shortdesc
+            %ul.contact-icons
+              - data.resume.contact.each do |contact|
+                = partial "themes/simple/contact", :locals => {:contact => contact}
+            -# %ul.download-icons
+            -#   - data.resume.download.each do |download|
+            -#     = partial "themes/simple/download", :locals => {:download => download}
             .section
               %h2.followMeBar Summary
               .article
@@ -43,13 +49,5 @@
                 .work.article
                   %h3.event-name=    school.name
                   .event-desc.desc=  markdown(school.description)
-        .widget-area
-          .widget.widget-contact
-            %ul.download-icons
-              - data.resume.download.each do |download|
-                = partial "themes/simple/download", :locals => {:download => download}
-            %ul.contact-icons
-              - data.resume.contact.each do |contact|
-                = partial "themes/simple/contact", :locals => {:contact => contact}
     = link_to '', '#', :id => "backtotop", :class => "backtotop"
     = partial "themes/simple/jquery"
