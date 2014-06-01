@@ -10,6 +10,7 @@
 - elsif download.name == 'source'
   - icon = 'fa fa-file-code-o'
 
-%li<
-  %a{:href => "#{download.link}", :target => "blank", :title => download.title}<
-    %i.fa{:class => "#{icon}"}
+-# %li<
+%a{:href => "#{download.link}", :target => "blank", :title => download.title}<
+  %i.fa{:class => "#{icon}"}
+  %span.title= download.title
