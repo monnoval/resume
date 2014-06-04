@@ -133,10 +133,10 @@
   cursor: default;
 
   .popover {
-    background-color: rgba(0,0,0,0.85);
+    background-color: rgba(0,0,0,0.75);
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0,0,0,0.4);
-    color: #fff;
+    color: $white;
     display: none;
     font-size: ceil($font-size-base * 0.85);
     font-weight: bold;
@@ -160,6 +160,7 @@
 
       &:hover {
         text-decoration: none;
+        color: $white;
       }
     }
 
@@ -181,35 +182,18 @@
   &:hover {
     .popover {
       display: block;
-      // -webkit-animation: fade-in .3s linear 1, move-up .3s linear 1;
-      // -moz-animation: fade-in .3s linear 1, move-up .3s linear 1;
-      // -ms-animation: fade-in .3s linear 1, move-up .3s linear 1;
     }
   }
 }
 
-@-webkit-keyframes fade-in {
-	from   { opacity: 0; }
-	to { opacity: 1; }
+@media all and (max-width: 800px) {
+  .download {
+    top: 0;
+    right: 0;
+    border-radius: 0 0 0 25px;
+    width: 45px;
+    // height: 25px;
+    // padding: 10px 0 15px;
+    padding-top: 5px;
+  }
 }
-@-moz-keyframes fade-in {
-	from   { opacity: 0; }
-	to { opacity: 1; }
-}
-@-ms-keyframes fade-in {
-	from   { opacity: 0; }
-	to { opacity: 1; }
-}
-@-webkit-keyframes move-up {
-	from   { bottom: 0; }
-	to { bottom: -42px; }
-}
-@-moz-keyframes move-up {
-	from   { bottom: 0; }
-	to { bottom: -42px; }
-}
-@-ms-keyframes move-up {
-	from   { bottom: 0; }
-	to { bottom: -42px; }
-}
-

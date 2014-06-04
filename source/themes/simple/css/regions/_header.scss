@@ -21,18 +21,19 @@
 }
 
 @media all and (max-width: 800px) {
-  .info-name {
-    font-size: floor($font-size-base * 3.60);
-    margin-left: 0;
-  }
-  .info-shortdesc {
-    font-size: ceil($font-size-base * 1.12);
-  }
+  // .info-name {
+  //   font-size: floor($font-size-base * 3.60);
+  //   margin-left: 0;
+  // }
+  // .info-shortdesc {
+  //   font-size: ceil($font-size-base * 1.12);
+  // }
 }
 
 @media all and (max-width: 520px) {
   .info-name {
-    font-size: floor($font-size-base * 2.60);
+    font-size: floor($font-size-base * 3.60);
+    margin-left: 0;
   }
 }
 
