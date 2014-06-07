@@ -2,3 +2,14 @@
 :javascript
   window.jQuery || document.write('<script src="themes/simple/js/jquery-1.8.3.min.js"><\/script>')
 %script{:src => "themes/simple/js/detectmobilebrowser.js", :type => ""}
+%script{:src => "themes/simple/js/jquery.fittext.js", :type => ""}
+:javascript
+  $('.download').click(function(e){
+    e.stopPropagation();
+    $(this).find('.popover').toggle();
+  });
+  $(document).click(function(){
+    $('.download > .popover').hide();
+  });
+  $('.info-name').fitText(0.9);
+  $('.info-shortdesc').fitText(2.8);

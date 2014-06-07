@@ -11,53 +11,14 @@
   line-height: $line-height-larger;
   margin-bottom: 0;
   text-align: center;
+  width: 100%;
 }
 
 .info-shortdesc {
   font-size: ceil($font-size-base * 1.25); // ~18px
   padding-bottom: 10px;
-  // border-bottom: 4px solid $gray-lighter;
   text-align: center;
-}
-
-@media all and (max-width: 800px) {
-  // .info-name {
-  //   font-size: floor($font-size-base * 3.60);
-  //   margin-left: 0;
-  // }
-  // .info-shortdesc {
-  //   font-size: ceil($font-size-base * 1.12);
-  // }
-}
-
-@media all and (max-width: 520px) {
-  .info-name {
-    font-size: floor($font-size-base * 3.60);
-    margin-left: 0;
-  }
-}
-
-@media all and (max-width: 360px) {
-  .info-name {
-    font-size: floor($font-size-base * 2.20);
-  }
-  .info-shortdesc {
-    font-size: ceil($font-size-base * 1.20)
-  }
-}
-
-@media print {
-  .info-name {
-    font-size: floor($font-size-base * 4); // ~56px
-    line-height: $line-height-larger;
-    margin-bottom: 0;
-    margin-left: -4px;
-  }
-
-  .info-shortdesc {
-    font-size: ceil($font-size-base * 1.25); // ~18px
-    padding-bottom: 10px;
-    border-bottom: 4px solid $gray-lighter;
-  }
+  width: 100%;
+  margin: 0;
 }
 

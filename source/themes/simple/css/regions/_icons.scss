@@ -116,7 +116,6 @@
   position: fixed;
   top:   10px;
   right: 10px;
-
   border-radius: 25px;
   font-size: floor($font-size-base * 1.7);
   line-height: $line-height-large;
@@ -128,16 +127,14 @@
   height: 25px;
   padding: 10px 0 15px;
   text-align: center;
-
-
-  cursor: default;
+  cursor: pointer;
 
   .popover {
+    display: none;
     background-color: rgba(0,0,0,0.75);
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0,0,0,0.4);
     color: $white;
-    display: none;
     font-size: ceil($font-size-base * 0.85);
     font-weight: bold;
     font-family: $helvetica;
@@ -176,24 +173,19 @@
         position: absolute;
       }
   }
-
-  &:active,
-  &:focus,
-  &:hover {
-    .popover {
-      display: block;
-    }
-  }
 }
 
 @media all and (max-width: 800px) {
   .download {
     top: 0;
     right: 0;
-    border-radius: 0 0 0 25px;
-    width: 45px;
-    // height: 25px;
-    // padding: 10px 0 15px;
+    border-radius: 0 0 0 45px;
+    width: 40px;
     padding-top: 5px;
+    padding-right: 5px;
+    text-align: right;
+    .popover {
+      bottom: -70px;
+    }
   }
 }
