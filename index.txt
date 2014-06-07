@@ -170,7 +170,7 @@ Introduced Camera Tracking/Match Moving using Blender 3D with Voodoo (Audience: 
 
 ---------------------------
 
-5th Mindanao Student Information Technology Education Conference
+5th Mindanao Student IT Education Conference
 December 2007 | Davao, Philippines
 
 Showcased Blender 3D for animation and graphic design (Audience: 1500)
