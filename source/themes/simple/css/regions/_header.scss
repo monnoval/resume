@@ -22,3 +22,11 @@
   margin: 0;
 }
 
+@media print {
+  .info-name {
+    font-size: floor($font-size-base * 4) !important; // ~56px
+  }
+  .info-shortdesc {
+    font-size: ceil($font-size-base * 1.25) !important; // ~18px
+  }
+}

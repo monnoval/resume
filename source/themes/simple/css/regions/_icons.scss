@@ -52,7 +52,6 @@
   }
 }
 
-
 @media all and (max-width: 800px) {
   .contact-icons {
     float: none;
@@ -79,36 +78,6 @@
     margin: 0 0.2em 0.8em;
   }
 }
-
-@media print {
-  .contact-icons  {
-    margin: 200px 0 0 0;
-
-    > li {
-      text-align: right;
-    }
-
-    > li a {
-      margin: 0 0 10px;
-      padding: 0;
-      width: auto;
-      height: auto;
-      background: none;
-      display: block;
-    }
-
-    > li a i {
-      display: none
-    }
-
-    > li a .print {
-      display: block;
-      font-size: $font-size-base;
-      font-weight: bold;
-    }
-  }
-}
-
 
 /* The element to hover over */
 
@@ -189,3 +158,38 @@
     }
   }
 }
+
+@media print {
+  .contact-icons  {
+    padding: 0;
+    margin: 0;
+
+    a {
+      margin: 0;
+      padding: 0;
+      width: auto;
+      height: auto;
+      border-radius: 0;
+      transition: none;
+      -moz-transition: none;
+      -webkit-transition: none;
+      background: none;
+      line-height: 0.8;
+    }
+
+    a i {
+      display: none
+    }
+
+    a .print {
+      display: inline-block;
+      font-size: $font-size-base;
+      font-weight: bold;
+    }
+  }
+  .download {
+    display: none;
+  }
+}
+
+
