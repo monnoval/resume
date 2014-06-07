@@ -15,6 +15,10 @@ View my resume here:
 - Automatic PDF generation using [wkhtmltopdf](http://wkhtmltopdf.org)
 - Responsive layout
 - Social icons for twitter, linkedin, github, email
+- Themes
+  - [Default](http://resume.monnoval.com/index.html)
+  - [SRT Theme](http://resume.monnoval.com/srt.html)
+  - [Simple One Column](http://resume.monnoval.com/simple.html)
 
 ## Installation
 
@@ -27,7 +31,6 @@ View my resume here:
 
 ## TODOs
 
-- Have a simpler one column theme
 - Support for [h-resume microformat](http://microformats.org/wiki/h-resume)
 - Support for old browsers (IE7 and IE8)
 
