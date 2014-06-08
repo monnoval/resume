@@ -15,10 +15,10 @@ View my resume here:
 - Automatic PDF generation using [wkhtmltopdf](http://wkhtmltopdf.org)
 - Responsive layout
 - Social icons for twitter, linkedin, github, email
-- Themes
-  - [Default](http://resume.monnoval.com/index.html)
+- Themes ready for use:
+  - [Simple](http://resume.monnoval.com/index.html)
+  - [Nigh](http://resume.monnoval.com/nigh.html)
   - [SRT Theme](http://resume.monnoval.com/srt.html)
-  - [Simple One Column](http://resume.monnoval.com/simple.html)
 
 ## Installation
 

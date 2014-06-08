@@ -5,9 +5,9 @@
 <!--[if gt IE 8]><!-->
 %html{:class => 'no-js', :lang => 'en'}
   <!--<![endif]-->
-  = partial "themes/default/head"
+  = partial "themes/nigh/head"
   %body{:class => "#{page_classes}" }
-    = partial "themes/default/chromeframe"
+    = partial "themes/nigh/chromeframe"
     .site.hfeed
       %header.site-header
       .site-content
@@ -47,9 +47,9 @@
           .widget.widget-contact
             %ul.download-icons
               - data.resume.download.each do |download|
-                = partial "themes/default/download", :locals => {:download => download}
+                = partial "themes/nigh/download", :locals => {:download => download}
             %ul.contact-icons
               - data.resume.contact.each do |contact|
-                = partial "themes/default/contact", :locals => {:contact => contact}
+                = partial "themes/nigh/contact", :locals => {:contact => contact}
     = link_to '', '#', :id => "backtotop", :class => "backtotop"
-    = partial "themes/default/jquery"
+    = partial "themes/nigh/jquery"
