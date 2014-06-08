@@ -11,14 +11,14 @@
     <meta content='' name='description'>
     <meta content='width=device-width, maximum-scale=1.0' name='viewport'>
     <title>Resume</title>
-    <link href='themes/simple/img/ico/favicon.ico' rel='ico' type='image/ico'>
-    <link href='themes/simple/css/style.css' media='all' rel='stylesheet' type='text/css'>
-    <link href='themes/simple/css/fonts.css' media='all' rel='stylesheet' type='text/css'>
+    <link href='themes/nigh/img/ico/favicon.ico' rel='ico' type='image/ico'>
+    <link href='themes/nigh/css/style.css' media='all' rel='stylesheet' type='text/css'>
+    <link href='themes/nigh/css/fonts.css' media='all' rel='stylesheet' type='text/css'>
     <!--[if lt IE 9]>
-      <script src='themes/simple/js/html5shiv.js' type=''></script>
+      <script src='themes/nigh/js/html5shiv.js' type=''></script>
     <![endif]-->
   </head>
-  <body class='simple'>
+  <body class='nigh'>
     <!--[if lt IE 7]>
       <p class='chromeframe'>
         You are using an outdated browser.
@@ -35,24 +35,6 @@
           <div class='site-main'>
             <h1 class='info-name'>Marlo Simon Noval</h1>
             <div class='info-shortdesc lowercase'>Front-end Web Developer always, Back-end Dev sometimes</div>
-            <ul class='contact-icons'>
-              <li><a target="blank" class="blog" href="http://monnoval.com"><i class='fa fa-home'></i><span class='print'>monnoval.com</span></a></li>
-              <li><a target="blank" class="email" href="mailto:mon@monnoval.com"><i class='fa fa-paper-plane'></i><span class='print'>mon@monnoval.com</span></a></li>
-              <li><a target="blank" class="twitter" href="http://twitter.com/monnoval"><i class='fa fa-twitter'></i><span class='print'>@monnoval</span></a></li>
-              <li><a target="blank" class="github" href="https://github.com/monnoval"><i class='fa fa-github-alt'></i><span class='print'>github.com/monnoval</span></a></li>
-              <li><a target="blank" class="linkedin" href="http://www.linkedin.com/in/monnoval"><i class='fa fa-linkedin'></i><span class='print'>linkedin.com/in/monnoval</span></a></li>
-            </ul>
-            <div class='download'>
-              <i class='fa fa-download'></i>
-              <div class='popover'>
-                <a href='/resume.pdf' target='blank' title='Download PDF'><i class='fa fa-file-pdf-o'></i>
-                <span class='title'>Download PDF</span></a>
-                <a href='/index.txt' target='blank' title='Download Text'><i class='fa fa-file-text-o'></i>
-                <span class='title'>Download Text</span></a>
-                <a href='http://github.com/monnoval/resume' target='blank' title='Source at Github'><i class='fa fa-file-code-o'></i>
-                <span class='title'>Source at Github</span></a>
-              </div>
-            </div>
             <div class='section'>
               <h2 class='followMeBar'>Summary</h2>
               <div class='article'>
@@ -265,25 +247,60 @@
             </div>
           </div>
         </div>
+        <div class='widget-area'>
+          <div class='widget widget-contact'>
+            <ul class='download-icons'>
+              <li><a href='/resume.pdf' target='blank' title='Download PDF'><i class='fa fa-file-pdf-o'></i></a></li>
+              <li><a href='/index.txt' target='blank' title='Download Text'><i class='fa fa-file-text-o'></i></a></li>
+              <li><a href='http://github.com/monnoval/resume' target='blank' title='Source at Github'><i class='fa fa-file-code-o'></i></a></li>
+            </ul>
+            <ul class='contact-icons'>
+              <li><a target="blank" class="blog" href="http://monnoval.com"><i class='fa fa-home'></i><span class='print'>monnoval.com</span></a></li>
+              <li><a target="blank" class="email" href="mailto:mon@monnoval.com"><i class='fa fa-paper-plane'></i><span class='print'>mon@monnoval.com</span></a></li>
+              <li><a target="blank" class="twitter" href="http://twitter.com/monnoval"><i class='fa fa-twitter'></i><span class='print'>@monnoval</span></a></li>
+              <li><a target="blank" class="github" href="https://github.com/monnoval"><i class='fa fa-github-alt'></i><span class='print'>github.com/monnoval</span></a></li>
+              <li><a target="blank" class="linkedin" href="http://www.linkedin.com/in/monnoval"><i class='fa fa-linkedin'></i><span class='print'>linkedin.com/in/monnoval</span></a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
     <a id="backtotop" class="backtotop" href="#"></a>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
     <script>
-      window.jQuery || document.write('<script src="themes/simple/js/jquery-1.8.3.min.js"><\/script>')
+      window.jQuery || document.write('<script src="themes/nigh/js/jquery-1.8.3.min.js"><\/script>')
     </script>
-    <script src='themes/simple/js/detectmobilebrowser.js' type=''></script>
-    <script src='themes/simple/js/jquery.fittext.js' type=''></script>
+    <script src='themes/nigh/js/detectmobilebrowser.js' type=''></script>
+    <script src='themes/nigh/js/followMeBar.js' type=''></script>
+    <script src='themes/nigh/js/bootstrap/affix.js' type=''></script>
     <script>
-      $('.download').click(function(e){
-        e.stopPropagation();
-        $(this).find('.popover').toggle();
+      $( document ).ready(function() {
+        if(jQuery.browser.mobile) {
+      
+          // Disable affix
+          $(window).off('.affix')
+          $('.widget-contact').removeData('affix').removeClass('affix affix-top affix-bottom')
+      
+        } else {
+          // Back to top button
+          $(window).scroll(function(){
+            if ($(this).scrollTop() > 400) $('#backtotop').fadeIn()
+            else $('#backtotop').fadeOut()
+          })
+          $('#backtotop').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 600)
+            return false;
+          })
+      
+          // Affix
+          $('.widget-contact').affix({
+            offset: {
+              top: 0
+            }
+          })
+        }
+      
       });
-      $(document).click(function(){
-        $('.download > .popover').hide();
-      });
-      $('.info-name').fitText(0.9);
-      $('.info-shortdesc').fitText(2.8);
     </script>
   </body>
 </html>
