@@ -1,5 +1,5 @@
 Marlo Simon Noval
-front-end web developer always, back-end dev sometimes
+high-level front-end web developer
 ------------------------------------------------------
 
 Summary
@@ -28,13 +28,17 @@ Web Developer
 Flava Design LLP
 April 2013 - Present | 994 bendemeer road b-central #07-03 singapore 339943
 
-- Developed static websites in Jekyll (jekyllrb.com) and Compass (compass-style.org)
-- Developed static websites using Middleman (middlemanapp.com)
-- Developed html using HAML (haml.info) in Middleman
-- Developed CSS with SASS (sass-lang.com)
+Purely focused on pushing out web design mockups to usable websites. You name it: responsive, mobile first, liquid, and cross-browser. I work on variety of projects such as e-commerce, marketing, e-mail, portfolios, annual reports, and interactive dashboards. On all projects I dedicate most of my time in writing pixel perfect and clean code. The core of my discipline is the balance between outcome and maintainability. This does translates to realistic timeline and profitable projects.
+
+In detail, below are things I do day by day:
+
+- Developed static websites using [Middleman](http://middlemanapp.com)
+- Developed html using [HAML](http://haml.info) in Middleman
+- Developed CSS with [SCSS](http://sass-lang.com)
+- Developed static websites in [Jekyll](http://jekyllrb.com) and [Compass](http://compass-style.org)
 - Developed web interaction using jQuery
 - Developed responsive or mobile friendly websites
-- Developed E-Commerce websites in PrestaShop (prestashop.com)
+- Developed E-Commerce websites in [PrestaShop](http://prestashop.com)
 - Developed websites in Wordpress
 - Extended PHP E-Commerce websites from third party software vendors
 - Developed Web Forms in ASP.net
@@ -48,28 +52,30 @@ User Interface Lead (Web and Mobile)
 Codebox Pte Ltd
 November 2011 - March 2013 | 54b south bridge road singapore 058685
 
+> Codebox fully transitioned its resources from eventsnap to servicing clients. Codebox is a fast-paced software development house focused to deliver value for clients.
+
+My role bridged software engineering and project management. Delivers project progress for clients, team members and stakeholders. Helped team on solving logical problems encountered in development. Applied the best deployment practices. Controlled all source code in subversion. Creation of documents shared across all parties specific for project scope, timeline, and budget.
+
+Each section below clearly lists all items done:
+
 Web and Software Development
 
 - Designed and developed user interfaces for iPhone and Android apps
 - Rapid prototyping for user interactions and flows
 - Designed and developed prototypes for project pitches
-- Designed a UI right from a quick paper sketch to HTML/CSS
 - Developed theme in Wordpress
 - Developed and extended features in Prestashop
-- Experience on using Bootstrap
-- Developed in Visual Studio mostly for front-end
-- Debugged and collaborated with developers to fix issues in .Net projects
+- Debugged and collaborated with developers to fix issues in .NET projects
 - Debugged and fixed issues in iPhone, iPad and Android app
 
 Software Deployment and Maintenance
 
-- Managed deployment of iOS app to testers via TestFlight (testflightapp.com)
-- Managed deployment of Android app to testers via IntelliJ IDEA (www.jetbrains.com/idea)
+- Managed deployment of iOS app to testers via [TestFlight](http://testflightapp.com)
+- Managed deployment of Android app to testers via [IntelliJ IDEA](http://www.jetbrains.com/idea)
 - Deployed mobile apps for both iOS AppStore and Android PlayStore
-- Maintained and monitored source code commits in Subversion (subversion.tigris.org)
+- Maintained and monitored source code commits in [Subversion](http://subversion.tigris.org)
 - Managed backups of File Server, SVN Server and Staging/Live Servers via Acronis
 - Deployment and maintenance of virtual machines running on Parallels for individual servers
-- Supported programmers on any issues encountered on their IDE on both Windows and Mac
 
 Project Management
 
@@ -78,10 +84,8 @@ Project Management
 - Confirmed and finalized requirements before production
 - Experience on billing clients for web and software projects
 - Experience on managing timeline for both web and software projects
-- Experience on Agile Software Development with Scrum for both managing people and projects
+- Experience with Scrum for both managing people and projects
 - Managed scope and budget as project deliverables
-- Communicate and help team members to perform better on a daily basis
-- Maintained documentation for projects to assure internal team and clients have the same expectation
 
 ---------------------------
 
@@ -89,13 +93,31 @@ Web Designer
 Codebox Pte Ltd
 October 2010 - November 2011 | 54b south bridge road singapore 058685
 
+> eventsnap is an online event registration site (given birth at Codebox) that lets people create an event website in a snap! The creation would only require the normal signup + 3 easy steps and you're live with your event website.
+
+I was responsible on design and front-end development for Public Site, Web App, and Themes. These were developed, maintained and deployed via continuos integration. Each part of the project are controlled separately in subversion.
+
+[Public Site](http://monnoval.com/portfolio/#/eventsnap)
+
+The website needed to let visitors feel at ease and relaxed while browsing thru the platform. Composition of the colors were chosen with delicate care to relate and give emphasis on overall harmony of the site.
+
+[Web App](http://monnoval.com/portfolio/#/eventsnap-app)
+
+The user interface for the event creation process was delivered with consistency across each screen. Buttons, text and forms are uniform and compatible cross browser.
+
+[Themes](http://monnoval.com/portfolio/#/eventsnap-themes)
+
+Users are able to select various themes for their event websites. The themes varied by simple, styled, clean and minimal. Compatible cross browser and was loosely integrated with the platform to assure extensibility in future use cases.
+
+In detail, below are things I did:
+
 - Expert-level CSS skills and the ability to write clean, well-structured CSS.
 - Ability to use CSS for complex layouts such as grid systems and fluid layout.
-- Optimized loading of images by using CSS Sprites.
+- Optimised loading of images by using CSS Sprites.
 - Cross browser compatibility from IE6, IE7, IE8 up to the latest browser.
-- Experience using HTML 5 Boilerplate (html5boilerplate.com)
+- Experience using [HTML 5 Boilerplate](http://html5boilerplate.com)
 - Experience with mock up tools, wireframes and rapid prototyping.
-- Experience on using Apache Ant (ant.apache.org) to compress both css and javascript.
+- Experience on using [Apache Ant](http://ant.apache.org) to compress both css and javascript.
 - Experience with continuos integration for software maintainability
 - Experience on step by step software development cycle from requirements, design, development and deployment.
 - Experience with graphic design.
