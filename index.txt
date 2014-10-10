@@ -5,14 +5,11 @@ high-level front-end web developer
 Summary
 ---------------------------
 
-__Front-End__ is overwhelming, I swam in the vast realm of tomato sauce poured in a maintainable spaghetti code just to do a tiny push of a pixel.
 
-__Back-end developers__ loves designers who code. Being in the front-end pool crosses my boundaries of user interface design and development.
+__Things I love to do:__
 
-__My bonus points:__
-
-- Blurred the lines between front-end and back-end development
-- Not afraid of cross browser nuances
+- Blurring the lines between front-end and back-end development
+- Excited about cross browser nuances
 - Ensures maintainable and modular code
 - Loves the command line
 - Huge fan of using version control such as Mercurial and Git
@@ -24,9 +21,21 @@ __My bonus points:__
 Experience
 ---------------------------
 
+Front End Web Developer
+Fastbooking Asia
+October 2014 - Present | Singapore
+
+> FASTBOOKING’s e-commerce solutions will help your hotel increase profit through a direct sales strategy. - [fastbooking.com/mission](http://www.fastbooking.com/mission/)
+
+I just started working in Fastbooking Asia. Will definitely update this section with more details from time to time. Thanks for dropping by!
+
+---------------------------
+
 Web Developer
 Flava Design LLP
-April 2013 - Present | 994 bendemeer road b-central #07-03 singapore 339943
+April 2013 - September 2014 | 994 bendemeer road b-central #07-03 singapore 339943
+
+> A meeting place of ideas, inspiration and craft. Working through a wide range of media and communication disciplines, we create work that inspires thought, motivates change and transforms minds. - [flava.sg](http://flava.sg/)
 
 Purely focused on pushing out web design mockups to usable websites. You name it: responsive, mobile first, liquid, and cross-browser. I work on variety of projects such as e-commerce, marketing, e-mail, portfolios, annual reports, and interactive dashboards. On all projects I dedicate most of my time in writing pixel perfect and clean code. The core of my discipline is the balance between outcome and maintainability. This does translates to realistic timeline and profitable projects.
 
