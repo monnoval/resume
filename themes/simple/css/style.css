@@ -448,7 +448,9 @@ h6 {
     z-index: 4; }
     .download .popover > a {
       display: block;
-      text-align: left; }
+      text-align: left;
+      border: 0 none;
+      color: #999999; }
       .download .popover > a > i {
         font-size: 21px;
         margin-right: 5px; }
