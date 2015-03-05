@@ -38,7 +38,7 @@ download:
 
 work:
 
-    - employer: Fastbooking Asia
+    - employer: Fastbooking Asia Pte Ltd
       title: Front End Web Developer
       location: 'Singapore'
       dates: October 2014 - Present
@@ -46,7 +46,17 @@ work:
       description: |
         > FASTBOOKING’s e-commerce solutions will help your hotel increase profit through a direct sales strategy. - [fastbooking.com/mission](http://www.fastbooking.com/mission/)
 
-        I just started working in Fastbooking Asia. Will definitely update this section with more details from time to time. Thanks for dropping by!
+        Prioritised on ensuring effective workflow in website delivery.
+
+        - Heavily develop websites in Wordpress
+        - Used build tools for delivery and dependencies
+        - Introduced a better one-stop-information / documentation for the dev team
+
+        Tools used daily
+
+        - Gulp
+        - Sass
+        - Raneto
 
     - employer: Flava Design LLP
       title: Web Developer
