@@ -22,12 +22,22 @@ Experience
 ---------------------------
 
 Front End Web Developer
-Fastbooking Asia
+Fastbooking Asia Pte Ltd
 October 2014 - Present | Singapore
 
 > FASTBOOKING’s e-commerce solutions will help your hotel increase profit through a direct sales strategy. - [fastbooking.com/mission](http://www.fastbooking.com/mission/)
 
-I just started working in Fastbooking Asia. Will definitely update this section with more details from time to time. Thanks for dropping by!
+Prioritised on ensuring effective workflow in website delivery.
+
+- Heavily develop websites in Wordpress
+- Used build tools for delivery and dependencies
+- Introduced a better one-stop-information / documentation for the dev team
+
+Tools used daily
+
+- Gulp
+- Sass
+- Raneto
 
 ---------------------------
 
